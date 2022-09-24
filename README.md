@@ -2,7 +2,7 @@
 
 This is the v2 of my personal site built using [Astro](https://astro.build/). It will function as a blog to track the things I have done and learned.
 
-![Preview](./public/img/site-preview.png)
+[![Preview](./public/img/site-preview.png)](https://www.meizayaga.com)
 
 ---
 

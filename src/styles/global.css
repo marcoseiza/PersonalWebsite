@@ -1,0 +1,39 @@
+:root {
+	--color-primary: black;
+	--color-primary-light: rgb(201, 204, 240);
+	--color-secondary: rgb(253, 244, 231);
+	--color-secondary-dark: rgb(220, 210, 196);
+	--color-background: rgb(253, 191, 101);
+	--color-card-text: black;
+	--border-width: 3.5px
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: var(--color-background);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body .fancy-text {
+	font-family: 'Ultra', 'Roboto', sans-serif;
+}
+
+h1, h2, h3, p, span {
+	color: var(--color-primary)
+}
+
+a {
+	color: var(--color-card-text);
+}
+

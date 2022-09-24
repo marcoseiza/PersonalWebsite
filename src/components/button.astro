@@ -1,0 +1,60 @@
+---
+export interface Props {
+  url?: string;
+  text?: string;
+  forceWidth?: number;
+  icon?: boolean;
+}
+const { url, text = "", forceWidth, icon = false } = Astro.props as Props;
+---
+
+<a href={url}>
+  <div class:list={[icon && "icon", icon && text && "icontext"]}>
+    <slot />
+    {text && <h4>{text}</h4>}
+  </div>
+</a>
+
+<style define:vars={{ forceWidth: forceWidth ? `${forceWidth}px` : "auto" }}>
+  a,
+  a:link {
+    text-decoration: none;
+  }
+
+  a div {
+    padding: 0.7em 1em;
+    width: var(--forceWidth);
+    background-color: var(--color-secondary);
+    border: var(--border-width) solid var(--color-card-text);
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px var(--color-card-text);
+    margin: 0 3px 3px 0;
+    transition: all 100ms ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  a div.icon {
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 0.3em;
+    gap: 0.3em;
+  }
+
+  a div.icontext {
+    padding-right: 0.5em;
+  }
+
+  a:hover div {
+    box-shadow: 1px 1px 0px var(--color-card-text);
+    transform: translate(2px, 2px);
+    cursor: pointer;
+  }
+
+  a div h4 {
+    color: var(--color-card-text);
+  }
+</style>

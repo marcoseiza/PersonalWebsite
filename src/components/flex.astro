@@ -1,0 +1,55 @@
+---
+export interface Props {
+  direction?: "row" | "row-reverse" | "column" | "column-reverse";
+  align?: "center" | "flex-start" | "flex-end" | "stretch" | "baseline";
+  justify?: "center" | "flex-start" | "flex-end" | "stretch" | "baseline";
+  alignContent?:
+    | "center"
+    | "flex-start"
+    | "flex-end"
+    | "stretch"
+    | "space-around"
+    | "space-between";
+  justifyContent?:
+    | "center"
+    | "flex-start"
+    | "flex-end"
+    | "stretch"
+    | "space-around"
+    | "space-between";
+  gap?: number;
+}
+const {
+  direction = "row",
+  align = "flex-start",
+  justify = "flex-start",
+  alignContent = "flex-start",
+  justifyContent = "flex-start",
+  gap = 0,
+} = Astro.props as Props;
+---
+
+<div class="flex-container">
+  <slot />
+</div>
+
+<style
+  define:vars={{
+    direction,
+    align,
+    justify,
+    alignContent,
+    justifyContent,
+    gap: `${gap}px`,
+  }}
+>
+  .flex-container {
+    display: flex;
+    flex-direction: var(--direction);
+    align-items: var(--align);
+    justify-items: var(--justify);
+    align-content: var(--alignContent);
+    justify-content: var(--justifyContent);
+    gap: var(--gap);
+  }
+</style>

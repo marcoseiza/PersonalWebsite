@@ -1,0 +1,43 @@
+---
+export interface Props {
+  parentPadding?: string;
+  color?: string;
+  showLine?: boolean;
+  lineHeight?: number;
+  marginTop?: string;
+  marginBottom?: string;
+}
+const {
+  parentPadding = "",
+  lineHeight = 0,
+  color = "black",
+  showLine = false,
+  marginTop = "1em",
+  marginBottom = "1em",
+} = Astro.props as Props;
+---
+
+<div class={`separator ${showLine && "showline"}`}></div>
+
+<style
+  define:vars={{
+    sepWidth: `calc(100% + ${parentPadding} * 2)`,
+    sepOffset: `-${parentPadding}`,
+    sepHeight: `${lineHeight}px`,
+    sepColor: color,
+    marginTop,
+    marginBottom,
+  }}
+>
+  .separator {
+    width: var(--sepWidth);
+    margin: 0 var(--sepOffset);
+    margin-top: var(--marginTop);
+    margin-bottom: var(--marginBottom);
+  }
+
+  .showline {
+    height: var(--sepHeight);
+    background-color: var(--sepColor);
+  }
+</style>

@@ -1,0 +1,31 @@
+---
+import HtmlHead from "../layouts/html-head.astro";
+import Container from "../components/container.astro";
+import Flex from "../components/flex.astro";
+import SimpleHeader from "../components/simple-header.astro";
+import { LoadPosts } from "../components/load-posts";
+import FloatingSideLink from "../components/floating-side-link.astro";
+---
+
+<HtmlHead title="👨‍💻 My Blog">
+  <SimpleHeader title="👨‍💻 My Blog" homeUrl="/" blogUrl="/blog">
+    <div class="space-for-the-side-link">
+      <Container padding={2}>
+        <Flex direction="column" align="stretch" justify="flex-start" gap={10}>
+          <LoadPosts client:idle />
+        </Flex>
+      </Container>
+    </div>
+  </SimpleHeader>
+
+  <style>
+    body {
+      background-color: var(--color-background);
+    }
+
+    main {
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  </style>
+</HtmlHead>

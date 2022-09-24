@@ -1,15 +1,81 @@
 ---
+import HtmlHead from "../layouts/html-head.astro";
+import Section from "../components/section.astro";
+import Card from "../components/card.astro";
+import Container from "../components/container.astro";
+import Separator from "../components/separator.astro";
+import Flex from "../components/flex.astro";
+import Button from "../components/button.astro";
+import Github from "../components/custom-icons/github.astro";
+import { Article } from "phosphor-react";
+import WindowTitleBar from "../components/window-title-bar.astro";
+import MdStyling from "../components/md-styling.astro";
+
+const about = (await Astro.glob("../content/about.md"))[0];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<HtmlHead title="👋 Hello">
+  <WindowTitleBar />
+  <Section scrollIndicator className={"welcome"} scrollTo="#about">
+    <Container padding={0} maxWidth={600}>
+      <Card>
+        <h1 class="fancy-text showcase-content-title">
+          Hi! I'm Marcos Eizayaga.<br />
+          What's Up 👋!
+        </h1>
+      </Card>
+    </Container>
+  </Section>
+  <div class="container-wrapper">
+    <Container padding={3} id="about" maxWidth={900}>
+      <Flex direction="column" align="center">
+        <Card>
+          <h2 class="fancy-text">About Myself</h2>
+          <Separator parentPadding="1em" lineHeight={2.5} showLine={true} />
+          <MdStyling>
+            <about.Content />
+          </MdStyling>
+        </Card>
+        <Separator marginTop="1em" marginBottom="1em" />
+        <Flex direction="row" align="center" justify="center" gap={10}>
+          <Button
+            url="https://github.com/marcoseiza"
+            text="My Work"
+            forceWidth={160}
+          >
+            <Github size={32} />
+          </Button>
+          <Button url="/blog" text="My Blog" forceWidth={160}>
+            <Article size={32} weight="bold" />
+          </Button>
+        </Flex>
+      </Flex>
+    </Container>
+  </div>
+</HtmlHead>
+
+<style>
+  main {
+    height: 100vh;
+  }
+
+  .welcome {
+    /* border-bottom: var(--border-width) solid var(--color-card-text);
+    border-top: var(--border-width) solid var(--color-card-text); */
+  }
+
+  .separator {
+    width: calc(100% + 2em);
+    height: 3px;
+    margin: 0px -1em;
+    background-color: black;
+  }
+
+  .container-wrapper {
+    background-color: var(--color-background);
+  }
+
+  .showcase-content-title {
+    text-align: center;
+  }
+</style>

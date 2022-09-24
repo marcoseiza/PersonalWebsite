@@ -1,0 +1,79 @@
+
+.react-article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.react-article-list li {
+  list-style: none;
+}
+
+.react-card {
+  display: block;
+  padding: 1em;
+  background-color: var(--color-secondary);
+  border: var(--border-width) solid var(--color-card-text);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px var(--color-card-text);
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+a.react-card:hover {
+  box-shadow: 7px 7px 0px var(--color-card-text);
+  transform: translate(3px, 3px);
+}
+
+.react-card * {
+  color: var(--color-card-text);
+}
+
+.react-flex {
+  display: flex;
+}
+
+.react-flex.wrap {
+  flex-wrap: wrap;
+}
+
+.react-flex.row {
+  flex-direction: row;
+}
+
+.react-flex.column {
+  flex-direction: column;
+}
+
+.react-flex.alignFlexStart {
+  align-items: flex-start;
+}
+
+.react-flex.alignCenter {
+  align-items: center;
+}
+
+.react-flex.justifySpaceBetween {
+  justify-content: space-between;
+}
+
+.react-article-title {
+  display: -webkit-box; 
+  -webkit-line-clamp: 3; 
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes Pulsate {
+  from { opacity: 1; }
+  50% { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.react-loading-skeleton {
+  animation: Pulsate var(--animation-duration) linear infinite;
+  background-image: url(/img/checker.png);
+}

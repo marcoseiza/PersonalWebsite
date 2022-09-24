@@ -1,0 +1,34 @@
+---
+export interface Props {
+  padding: 0 | 1 | 2 | 3 | 4 | 5;
+  id?: string;
+  maxWidth?: number;
+  className?: string;
+}
+const { padding, id, maxWidth, className } = Astro.props as Props;
+---
+
+<div id={id} class:list={["container", className]}>
+  <slot />
+</div>
+
+<style
+  define:vars={{
+    paddingPx: `${padding * 20}px`,
+    paddingPxSmall: `${padding * 10}px`,
+    maxWidth: maxWidth ? `${maxWidth}px` : "none",
+  }}
+>
+  .container {
+    padding: var(--paddingPx);
+    max-width: var(--maxWidth);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      padding: var(--paddingPxSmall);
+    }
+  }
+</style>

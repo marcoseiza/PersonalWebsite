@@ -1,0 +1,66 @@
+---
+export interface Props {
+  scrollIndicator?: boolean;
+  className?: string;
+  heightPercent?: number;
+  scrollTo?: string;
+}
+const {
+  className = "",
+  scrollIndicator = false,
+  heightPercent = 1.0,
+  scrollTo,
+} = Astro.props as Props;
+
+import { ArrowDown } from "phosphor-react";
+---
+
+<div class={`wrapper ${className}`}>
+  {scrollIndicator && <div />}
+  <div class="content">
+    <slot />
+  </div>
+  {
+    scrollIndicator && (
+      <a href={scrollTo} class="scroll-indicator">
+        <span>Scroll Down</span>
+        <ArrowDown size={32} color={"var(--color-primary)"} weight="regular">
+          <animateTransform
+            id="op"
+            attributeType="XML"
+            attributeName="transform"
+            type="translate"
+            dur="1s"
+            values="0,0; 0,-2; 0,0; 0,2; 0,0; 0,-2; 0,0; 0,2; 0,0"
+            begin="2s;op.end+2s"
+          />
+        </ArrowDown>
+      </a>
+    )
+  }
+</div>
+
+<style define:vars={{ heightPercent }}>
+  .wrapper {
+    height: calc(100vh * var(--heightPercent));
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .content {
+    width: 75%;
+  }
+
+  .scroll-indicator {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+  }
+
+  .scroll-indicator span {
+    font-weight: 600;
+  }
+</style>

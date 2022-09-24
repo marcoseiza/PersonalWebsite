@@ -1,0 +1,23 @@
+<main class="retro-scroll">
+  <slot />
+</main>
+
+<style is:global>
+  main.retro-scroll {
+    overflow-y: auto;
+    position: relative;
+  }
+  main.retro-scroll::-webkit-scrollbar {
+    width: 24px;
+  }
+  main.retro-scroll::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  main.retro-scroll::-webkit-scrollbar-track {
+    border-left: var(--border-width) solid var(--color-card-text);
+  }
+  main.retro-scroll::-webkit-scrollbar-track {
+    background: url(/img/checker.png);
+    background-color: var(--color-secondary);
+  }
+</style>

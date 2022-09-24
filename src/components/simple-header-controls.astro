@@ -1,0 +1,31 @@
+---
+import { ArrowLeft, ArrowRight, House, Article } from "phosphor-react";
+import Flex from "./flex.astro";
+import Button from "./button.astro";
+
+export interface Props {
+  homeUrl: string;
+  blogUrl: string;
+  showArrows?: boolean;
+}
+const { homeUrl, blogUrl, showArrows = false } = Astro.props as Props;
+---
+
+<Flex gap={5}>
+  <Button icon url={homeUrl} text={"HOME"}>
+    <House size={32} weight="bold" />
+  </Button>
+  <Button icon url={blogUrl} text={"BLOG"}>
+    <Article size={32} weight="bold" />
+  </Button>
+  {
+    showArrows && (
+      <Button icon url="javascript:history.back()">
+        <ArrowLeft size={32} weight="bold" />
+      </Button>
+      <Button icon url="javascript:history.forward()">
+        <ArrowRight size={32} weight="bold" />
+      </Button>
+    )
+  }
+</Flex>

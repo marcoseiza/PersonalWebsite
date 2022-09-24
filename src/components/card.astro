@@ -1,0 +1,39 @@
+---
+export interface Props {
+  className?: string;
+  url?: string;
+}
+const { className = "", url } = Astro.props as Props;
+
+const Wrapper = url ? "a" : "div";
+---
+
+<Wrapper href={url} class={`card-wrapper ${url && "clickable"} ${className}`}>
+  <slot />
+</Wrapper>
+
+<style>
+  .card-wrapper {
+    padding: 1em;
+    background-color: var(--color-secondary);
+    border: var(--border-width) solid var(--color-card-text);
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px var(--color-card-text);
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+  }
+
+  .card-wrapper.clickable:hover {
+    box-shadow: 7px 7px 0px var(--color-card-text);
+    transform: translate(3px, 3px);
+  }
+
+  .card-wrapper :global(h1),
+  .card-wrapper :global(h2),
+  .card-wrapper :global(h3),
+  .card-wrapper :global(h4),
+  .card-wrapper :global(p),
+  .card-wrapper :global(span) {
+    color: var(--color-card-text);
+  }
+</style>

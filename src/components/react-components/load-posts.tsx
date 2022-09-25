@@ -13,15 +13,9 @@ export default function LoadPosts() {
   useEffect(() => {
     Object.values(import.meta.glob("../../pages/posts/*.md") as any).map(
       (v: any) =>
-        v()
-          .then((post: MDInstance) => {
-            return new Promise<MDInstance>((r) =>
-              setTimeout(() => r(post), 200)
-            );
-          })
-          .then((post: MDInstance) => {
-            setPosts((curPosts) => curPosts.concat(post));
-          })
+        v().then((post: MDInstance) => {
+          setPosts((curPosts) => curPosts.concat(post));
+        })
     );
   }, []);
 

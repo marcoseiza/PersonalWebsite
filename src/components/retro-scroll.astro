@@ -1,16 +1,20 @@
 ---
 export interface Props {
   className?: string;
+  fullpage?: boolean;
 }
+
+const { className = "", fullpage = false } = Astro.props as Props;
 ---
 
-<main class:list={["retro-scroll", Astro.props.className || ""]}>
+<main class:list={["retro-scroll", className, fullpage && "fullpage"]}>
   <slot />
 </main>
 
 <style is:global>
   main.retro-scroll {
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
   }
   main.retro-scroll::-webkit-scrollbar {
@@ -25,5 +29,13 @@ export interface Props {
   main.retro-scroll::-webkit-scrollbar-track {
     background: url(/img/checker.png);
     background-color: var(--color-secondary);
+  }
+
+  main.fullpage {
+    height: 100vh;
+    max-height: -moz-available;
+    max-height: -webkit-fill-available;
+    max-height: fill-available;
+    padding-bottom: 2em;
   }
 </style>

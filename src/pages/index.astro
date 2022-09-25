@@ -14,8 +14,8 @@ const about = (await Astro.glob("../content/about.md"))[0];
 ---
 
 <HtmlHead title="👋 Hi | Marcos Eizayaga">
-  <WindowTitleBar />
-  <RetroScroll className={"scroll"}>
+  <WindowTitleBar sticky />
+  <RetroScroll className={"scroll"} fullpage>
     <Section scrollIndicator scrollTo="#about">
       <Container padding={0} maxWidth={600}>
         <Flex direction="column" align="center" gap="2em">
@@ -29,27 +29,30 @@ const about = (await Astro.glob("../content/about.md"))[0];
         </Flex>
       </Container>
     </Section>
-    <div class="container-wrapper">
-      <Container padding={3} id="about" maxWidth={900}>
-        <Flex direction="column" align="center" gap="2em">
-          <Card>
-            <h2 class="fancy-text">About Myself</h2>
-            <Separator parentPadding="1em" lineHeight={2.5} showLine={true} />
-            <MdStyling>
-              <about.Content />
-            </MdStyling>
-          </Card>
-          <ActionButtons />
-        </Flex>
-      </Container>
-    </div>
+
+    <Container
+      padding={3}
+      id="about"
+      maxWidth={900}
+      className={"container-wrapper"}
+    >
+      <Flex direction="column" align="center" gap="2em">
+        <Card>
+          <h2 class="fancy-text">About Myself</h2>
+          <Separator parentPadding="1em" lineHeight={2.5} showLine={true} />
+          <MdStyling>
+            <about.Content />
+          </MdStyling>
+        </Card>
+        <ActionButtons />
+      </Flex>
+    </Container>
   </RetroScroll>
 </HtmlHead>
 
 <style>
-  .scroll {
-    height: 100vh;
-    overflow-x: hidden;
+  body {
+    overflow: hidden;
   }
 
   .separator {

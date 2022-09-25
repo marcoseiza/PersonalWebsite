@@ -10,7 +10,7 @@ import RetroScroll from "../components/retro-scroll.astro";
 ---
 
 <HtmlHead title="👨‍💻 My Blog | Marcos Eizayaga">
-  <WindowTitleBar>
+  <WindowTitleBar sticky>
     <Button text="HOME" url={"/"} size={"small"} elevation={1}>
       <House size={20} weight="fill" />
     </Button>
@@ -18,7 +18,7 @@ import RetroScroll from "../components/retro-scroll.astro";
       <Article size={20} weight="fill" />
     </Button>
   </WindowTitleBar>
-  <RetroScroll className="scroll">
+  <RetroScroll className="scroll" fullpage>
     <Container padding={2} maxWidth={900}>
       <Flex direction="column" align="stretch" justify="flex-start" gap={10}>
         <LoadPosts client:idle />
@@ -29,12 +29,7 @@ import RetroScroll from "../components/retro-scroll.astro";
 
 <style>
   body {
+    overflow: hidden;
     background-color: var(--color-background);
-  }
-
-  .scroll {
-    height: 100vh;
-    padding-bottom: 3em;
-    padding-top: 3em;
   }
 </style>

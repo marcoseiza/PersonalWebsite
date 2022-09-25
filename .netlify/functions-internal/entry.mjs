@@ -843,7 +843,7 @@ const htmlBooleanAttributes = /^(allowfullscreen|async|autofocus|autoplay|contro
 const htmlEnumAttributes = /^(contenteditable|draggable|spellcheck|value)$/i;
 const svgEnumAttributes = /^(autoReverse|externalResourcesRequired|focusable|preserveAlpha)$/i;
 const STATIC_DIRECTIVES = /* @__PURE__ */ new Set(["set:html", "set:text"]);
-const toIdent = (k) => k.trim().replace(/(?:(?<!^)\b\w|\s+|[^\w]+)/g, (match, index) => {
+const toIdent = (k) => k.trim().replace(/(?:(?!^)\b\w|\s+|[^\w]+)/g, (match, index) => {
   if (/[^\w]|\s/.test(match))
     return "";
   return index === 0 ? match : match.toUpperCase();
@@ -1536,22 +1536,57 @@ var server_default = {
   renderToStaticMarkup
 };
 
-const $$metadata$d = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/html-head.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [{ type: "external", src: "https://unpkg.com/phosphor-icons" }] });
+const $$metadata$d = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/html-head.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
 const $$Astro$e = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/html-head.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
 const $$HtmlHead = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$HtmlHead;
   const { title } = Astro2.props;
+  const description = "Marcos Eizayaga personal website. Check out my blog where I document all the projects I'm doing.";
+  const previewImg = {
+    path: "/seo-assets/preview.png",
+    width: "2313",
+    height: "1230",
+    type: "image/png"
+  };
+  const pageUrl = "https://www.meizayaga.com";
+  const pageTitle = "Marcos Eizayaga";
   return renderTemplate`<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Ultra&display=swap" rel="stylesheet">
-    
+
     <title>${title}</title>
+    <meta name="description"${addAttribute(description, "content")}>
+    <link rel="canonical"${addAttribute(pageUrl, "href")}>
+
+    <meta property="og:title"${addAttribute(title, "content")}>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description"${addAttribute(description, "content")}>
+    <meta property="og:image"${addAttribute(previewImg.path, "content")}>
+    <meta property="og:image:width"${addAttribute(previewImg.width, "content")}>
+    <meta property="og:image:height"${addAttribute(previewImg.height, "content")}>
+    <meta property="og:image:type"${addAttribute(previewImg.type, "content")}>
+    <meta property="og:url"${addAttribute(pageUrl, "content")}>
+    <meta property="og:site_name"${addAttribute(pageTitle, "content")}>
+
+    <meta name="twitter:card"${addAttribute(previewImg.path, "content")}>
+    <meta name="twitter:site"${addAttribute(pageUrl, "content")}>
+    <meta name="twitter:title"${addAttribute(pageTitle, "content")}>
+    <meta name="twitter:description"${addAttribute(description, "content")}>
+    <meta name="twitter:image"${addAttribute(previewImg.type, "content")}>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FDF4EB">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" user-scalable="no">
   ${renderHead($$result)}</head>
   <body>
     ${renderSlot($$result, $$slots["default"])}
@@ -1976,15 +2011,15 @@ const $$Astro$2 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/p
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Index;
-  const about = (await Astro2.glob(/* #__PURE__ */ Object.assign({"../content/about.md": () => import('./chunks/about.f0454eab.mjs')}), () => "../content/about.md"))[0];
+  const about = (await Astro2.glob(/* #__PURE__ */ Object.assign({"../content/about.md": () => import('./chunks/about.2c5612fc.mjs')}), () => "../content/about.md"))[0];
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${renderComponent($$result, "HtmlHead", $$HtmlHead, { "title": "\u{1F44B} Hello", "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "class": "astro-JPWAH6CL" })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "Section", $$Section, { "scrollIndicator": true, "scrollTo": "#about", "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 0, "maxWidth": 600, "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "center", "gap": "2em", "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "Card", $$Card, { "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<h1 class="fancy-text showcase-content-title astro-JPWAH6CL">
-              Hi! I'm Marcos Eizayaga.<br class="astro-JPWAH6CL">
+  return renderTemplate`${renderComponent($$result, "HtmlHead", $$HtmlHead, { "title": "\u{1F44B} Hi | Marcos Eizayaga", "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "class": "astro-OASHPATY" })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "Section", $$Section, { "scrollIndicator": true, "scrollTo": "#about", "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 0, "maxWidth": 600, "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "center", "gap": "2em", "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "Card", $$Card, { "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<h1 class="fancy-text showcase-content-title astro-OASHPATY">
+              Hi! I'm Marcos Eizayaga.<br class="astro-OASHPATY">
               What's Up 👋!
-            </h1>` })}${renderComponent($$result, "ActionButtons", $$ActionButtons, { "class": "astro-JPWAH6CL" })}` })}` })}` })}<div class="container-wrapper astro-JPWAH6CL">
-      ${renderComponent($$result, "Container", $$Container, { "padding": 3, "id": "about", "maxWidth": 900, "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "center", "gap": "2em", "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "Card", $$Card, { "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`<h2 class="fancy-text astro-JPWAH6CL">About Myself</h2>${renderComponent($$result, "Separator", $$Separator, { "parentPadding": "1em", "lineHeight": 2.5, "showLine": true, "class": "astro-JPWAH6CL" })}${renderComponent($$result, "MdStyling", $$MdStyling, { "class": "astro-JPWAH6CL" }, { "default": () => renderTemplate`${renderComponent($$result, "about.Content", about.Content, { "class": "astro-JPWAH6CL" })}` })}` })}${renderComponent($$result, "ActionButtons", $$ActionButtons, { "class": "astro-JPWAH6CL" })}` })}` })}
+            </h1>` })}${renderComponent($$result, "ActionButtons", $$ActionButtons, { "class": "astro-OASHPATY" })}` })}` })}` })}<div class="container-wrapper astro-OASHPATY">
+      ${renderComponent($$result, "Container", $$Container, { "padding": 3, "id": "about", "maxWidth": 900, "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "center", "gap": "2em", "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "Card", $$Card, { "class": "astro-OASHPATY" }, { "default": () => renderTemplate`<h2 class="fancy-text astro-OASHPATY">About Myself</h2>${renderComponent($$result, "Separator", $$Separator, { "parentPadding": "1em", "lineHeight": 2.5, "showLine": true, "class": "astro-OASHPATY" })}${renderComponent($$result, "MdStyling", $$MdStyling, { "class": "astro-OASHPATY" }, { "default": () => renderTemplate`${renderComponent($$result, "about.Content", about.Content, { "class": "astro-OASHPATY" })}` })}` })}${renderComponent($$result, "ActionButtons", $$ActionButtons, { "class": "astro-OASHPATY" })}` })}` })}
     </div>` })}` })}
 
 `;
@@ -2146,8 +2181,6 @@ function LoadPosts() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     Object.values(/* #__PURE__ */ Object.assign({"../../pages/posts/test.md": () => Promise.resolve().then(() => _page1)})).map((v) => v().then((post) => {
-      return new Promise((r) => setTimeout(() => r(post), 200));
-    }).then((post) => {
       setPosts((curPosts) => curPosts.concat(post));
     }));
   }, []);
@@ -2173,7 +2206,7 @@ const $$Blog = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${renderComponent($$result, "HtmlHead", $$HtmlHead, { "title": "\u{1F468}\u200D\u{1F4BB} My Blog", "class": "astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "class": "astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "HOME", "url": "/", "size": "small", "elevation": 1, "class": "astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "House", House, { "size": 20, "weight": "fill", "class": "astro-Z52ZSSOH" })}` })}${renderComponent($$result, "Button", $$Button, { "text": "BLOG", "url": "/blog", "size": "small", "elevation": 1, "class": "astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 20, "weight": "fill", "class": "astro-Z52ZSSOH" })}` })}` })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 2, "maxWidth": 900, "class": "astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "stretch", "justify": "flex-start", "gap": 10, "class": "astro-Z52ZSSOH" }, { "default": () => renderTemplate`${renderComponent($$result, "LoadPosts", LoadPosts, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-posts", "client:component-export": "default", "class": "astro-Z52ZSSOH" })}` })}` })}` })}` })}
+  return renderTemplate`${renderComponent($$result, "HtmlHead", $$HtmlHead, { "title": "\u{1F468}\u200D\u{1F4BB} My Blog | Marcos Eizayaga", "class": "astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "class": "astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "HOME", "url": "/", "size": "small", "elevation": 1, "class": "astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "House", House, { "size": 20, "weight": "fill", "class": "astro-GZABQZ74" })}` })}${renderComponent($$result, "Button", $$Button, { "text": "BLOG", "url": "/blog", "size": "small", "elevation": 1, "class": "astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 20, "weight": "fill", "class": "astro-GZABQZ74" })}` })}` })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 2, "maxWidth": 900, "class": "astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "stretch", "justify": "flex-start", "gap": 10, "class": "astro-GZABQZ74" }, { "default": () => renderTemplate`${renderComponent($$result, "LoadPosts", LoadPosts, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-posts", "client:component-export": "default", "class": "astro-GZABQZ74" })}` })}` })}` })}` })}
 
 `;
 });
@@ -2261,7 +2294,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/index.56753f26.css","assets/blog-index-posts-test.f8de311f.css","assets/blog-index.3af70659.css"],"scripts":[{"type":"external","value":"hoisted.0d4e2078.js"}],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog-index-posts-test.f8de311f.css"],"scripts":[{"type":"external","value":"hoisted.0d4e2078.js"}],"routeData":{"route":"/posts/test","type":"page","pattern":"^\\/posts\\/test\\/?$","segments":[[{"content":"posts","dynamic":false,"spread":false}],[{"content":"test","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/posts/test.md","pathname":"/posts/test","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog.7f5f0f89.css","assets/blog-index.3af70659.css","assets/blog-index-posts-test.f8de311f.css"],"scripts":[{"type":"external","value":"hoisted.0d4e2078.js"}],"routeData":{"route":"/blog","type":"page","pattern":"^\\/blog\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog.astro","pathname":"/blog","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/Users/marcoseiza/Repos/PersonalWebSite/src/content/about.md":"chunks/about.f0454eab.mjs","@astrojs/react/client.js":"client.5eb191a4.js","/astro/hoisted.js?q=0":"hoisted.0d4e2078.js","/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-posts":"load-posts.63c16cd7.js","/Users/marcoseiza/Repos/PersonalWebSite/src/pages/posts/test.md":"chunks/test.75a5f2cc.js","astro:scripts/before-hydration.js":""},"assets":["/assets/blog.7f5f0f89.css","/assets/blog-index.3af70659.css","/assets/blog-index-posts-test.f8de311f.css","/assets/index.56753f26.css","/client.5eb191a4.js","/hoisted.0d4e2078.js","/load-posts.63c16cd7.js","/chunks/index.304fda30.js","/chunks/load-posts.87566c9b.js","/chunks/test.75a5f2cc.js","/img/big-checker.png","/img/checker.png","/img/cornell.svg","/img/goose.gif","/img/microsoft.svg","/img/noise.png","/img/profile.jpeg","/img/site-preview.png"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/index.bdf24086.css","assets/blog-index-posts-test.f8de311f.css","assets/blog-index.3af70659.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog-index-posts-test.f8de311f.css"],"scripts":[],"routeData":{"route":"/posts/test","type":"page","pattern":"^\\/posts\\/test\\/?$","segments":[[{"content":"posts","dynamic":false,"spread":false}],[{"content":"test","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/posts/test.md","pathname":"/posts/test","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog.de31e9fa.css","assets/blog-index.3af70659.css","assets/blog-index-posts-test.f8de311f.css"],"scripts":[],"routeData":{"route":"/blog","type":"page","pattern":"^\\/blog\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog.astro","pathname":"/blog","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/Users/marcoseiza/Repos/PersonalWebSite/src/content/about.md":"chunks/about.2c5612fc.mjs","@astrojs/react/client.js":"client.5eb191a4.js","/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-posts":"load-posts.82a7dd07.js","/Users/marcoseiza/Repos/PersonalWebSite/src/pages/posts/test.md":"chunks/test.31c4bcf8.js","astro:scripts/before-hydration.js":""},"assets":["/assets/blog.de31e9fa.css","/assets/blog-index.3af70659.css","/assets/blog-index-posts-test.f8de311f.css","/assets/index.bdf24086.css","/client.5eb191a4.js","/favicon.png","/favicon.svg","/load-posts.82a7dd07.js","/chunks/index.304fda30.js","/chunks/load-posts.fa9c0c2c.js","/chunks/test.31c4bcf8.js","/img/big-checker.png","/img/checker.png","/img/cornell.svg","/img/goose.gif","/img/microsoft.svg","/img/noise.png","/img/profile.jpeg","/img/site-preview.png","/seo-assets/preview.png"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });

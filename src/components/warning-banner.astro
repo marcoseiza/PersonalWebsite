@@ -1,0 +1,16 @@
+---
+import { Warning } from "phosphor-react";
+import Card from "./card.astro";
+import Flex from "./flex.astro";
+
+export interface Props {
+  id: string;
+}
+---
+
+<Card id={Astro.props.id}>
+  <Flex gap="1em" align="center">
+    <Warning size={32} weight="bold" className="warning-icon" />
+    <p><strong><slot /></strong></p>
+  </Flex>
+</Card>

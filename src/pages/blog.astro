@@ -7,6 +7,7 @@ import WindowTitleBar from "../components/window-title-bar.astro";
 import { Article, House } from "phosphor-react";
 import Button from "../components/button.astro";
 import RetroScroll from "../components/retro-scroll.astro";
+import WarningBanner from "../components/warning-banner.astro";
 ---
 
 <HtmlHead title="👨‍💻 My Blog | Marcos Eizayaga">
@@ -21,6 +22,18 @@ import RetroScroll from "../components/retro-scroll.astro";
   <RetroScroll className="scroll" fullpage>
     <Container padding={2} maxWidth={900}>
       <Flex direction="column" align="stretch" justify="flex-start" gap={10}>
+        <WarningBanner id={"warning"}>
+          Blog does not currently work on Safari. 🥲<br />
+          Please use a Chromium or Mozilla based browser instead.
+        </WarningBanner>
+        <script>
+          setTimeout(() => {
+            if (!document.getElementById("posts-loaded")) {
+              const element = document.getElementById("warning");
+              if (element) element.style.display = "block";
+            }
+          }, 1000);
+        </script>
         <LoadPosts client:idle />
       </Flex>
     </Container>
@@ -31,5 +44,13 @@ import RetroScroll from "../components/retro-scroll.astro";
   body {
     overflow: hidden;
     background-color: var(--color-background);
+  }
+
+  .warning-icon {
+    flex-shrink: 0;
+  }
+
+  ::global(#warning) {
+    display: none;
   }
 </style>

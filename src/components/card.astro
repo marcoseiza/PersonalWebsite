@@ -1,15 +1,16 @@
 ---
 export interface Props {
   className?: string;
+  id?: string;
   url?: string;
   padding?: string | number;
 }
-const { className = "", url, padding = "1em" } = Astro.props as Props;
+const { className = "", id, url, padding = "1em" } = Astro.props as Props;
 
 const Wrapper = url ? "a" : "div";
 ---
 
-<div>
+<div id={id}>
   <Wrapper href={url} class={`card-wrapper ${url && "clickable"} ${className}`}>
     <slot />
   </Wrapper>

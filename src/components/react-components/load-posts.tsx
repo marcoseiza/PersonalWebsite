@@ -19,8 +19,10 @@ export default function LoadPosts() {
     );
   }, []);
 
+  const id = posts.length > 0 ? "posts-loaded" : "loading-posts";
+
   return (
-    <ul className={"react-article-list"}>
+    <ul className={"react-article-list"} id={id}>
       {posts.length > 0 ? (
         posts
           .sort(postComparator)

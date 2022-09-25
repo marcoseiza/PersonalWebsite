@@ -7,6 +7,11 @@ import checker from "../../public/img/big-checker.png";
 </div>
 
 <style is:global>
+  .md {
+    --box-shadow: 3px 3px 0 black;
+    --box-shadow-hover: 1px 1px 0 black;
+  }
+
   .md h1,
   .md h2,
   .md h3,
@@ -50,6 +55,7 @@ import checker from "../../public/img/big-checker.png";
     border-radius: 8px;
     box-shadow: var(--box-shadow);
     background: url(/img/big-checker.png);
+    max-width: 100%;
   }
 
   .md a img {
@@ -58,6 +64,7 @@ import checker from "../../public/img/big-checker.png";
     padding: 0.3em 0 0 0;
     border-radius: 0;
     margin: 0 -0.3em -0.3em -0.3em;
+    max-width: none;
   }
 
   .md table {

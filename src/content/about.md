@@ -4,4 +4,4 @@
 - <img align="center" style="margin-bottom:3px; border:none; background:none; border-radius: 0;" width="14" src="/img/microsoft.svg" /> SWE Intern @ Microsoft | Summer 2022
 - 🥁 Passionate about Jazz Drumming and Singing
 
-<img style="margin:2em 0; display:block; margin-left:auto; margin-right:auto" width="400" src="/img/profile.jpeg" />
+<img style="margin:2em 0 0.5em 0; display:block; margin-left:auto; margin-right:auto" width="400" src="/img/profile.jpeg" />

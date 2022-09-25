@@ -17,7 +17,7 @@ export interface Props {
     | "stretch"
     | "space-around"
     | "space-between";
-  gap?: number;
+  gap?: number | string;
 }
 const {
   direction = "row",
@@ -40,7 +40,7 @@ const {
     justify,
     alignContent,
     justifyContent,
-    gap: `${gap}px`,
+    gap: typeof gap == "string" ? gap : `${gap}px`,
   }}
 >
   .flex-container {

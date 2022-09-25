@@ -4,12 +4,30 @@ export interface Props {
   text?: string;
   forceWidth?: number;
   icon?: boolean;
+  elevation?: 1 | 2 | 3;
+  size?: "small" | "normal";
+  className?: string;
 }
-const { url, text = "", forceWidth, icon = false } = Astro.props as Props;
+const {
+  url,
+  text = "",
+  forceWidth,
+  icon = false,
+  size = "normal",
+  elevation = 2,
+  className = "link",
+} = Astro.props as Props;
 ---
 
-<a href={url}>
-  <div class:list={[icon && "icon", icon && text && "icontext"]}>
+<a href={url} class:list={[className]}>
+  <div
+    class:list={[
+      icon && "icon",
+      icon && text && "icontext",
+      size,
+      `elevation-${elevation}`,
+    ]}
+  >
     <slot />
     {text && <h4>{text}</h4>}
   </div>
@@ -22,18 +40,40 @@ const { url, text = "", forceWidth, icon = false } = Astro.props as Props;
   }
 
   a div {
-    padding: 0.7em 1em;
+    --shadow: 3px;
     width: var(--forceWidth);
     background-color: var(--color-secondary);
     border: var(--border-width) solid var(--color-card-text);
     border-radius: 10px;
-    box-shadow: 3px 3px 0px var(--color-card-text);
-    margin: 0 3px 3px 0;
+    box-shadow: var(--shadow) var(--shadow) 0px var(--color-card-text);
+    margin: 0 var(--shadow) var(--shadow) 0;
     transition: all 100ms ease-in-out;
     text-align: center;
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  a div.elevation-1 {
+    --shadow: 2px;
+  }
+
+  a div.elevation-2 {
+    --shadow: 4px;
+  }
+
+  a div.elevation-3 {
+    --shadow: 5px;
+  }
+
+  a div.normal {
+    padding: 0.7em 1em;
+  }
+
+  a div.small {
+    font-size: 0.85em;
+    padding: 0 0.3em;
+    gap: 0.2em;
   }
 
   a div.icon {
@@ -50,7 +90,7 @@ const { url, text = "", forceWidth, icon = false } = Astro.props as Props;
 
   a:hover div {
     box-shadow: 1px 1px 0px var(--color-card-text);
-    transform: translate(2px, 2px);
+    transform: translate(calc(var(--shadow) - 1px), calc(var(--shadow) - 1px));
     cursor: pointer;
   }
 

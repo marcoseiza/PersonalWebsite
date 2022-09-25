@@ -2,19 +2,26 @@
 export interface Props {
   className?: string;
   url?: string;
+  padding?: string | number;
 }
-const { className = "", url } = Astro.props as Props;
+const { className = "", url, padding = "1em" } = Astro.props as Props;
 
 const Wrapper = url ? "a" : "div";
 ---
 
-<Wrapper href={url} class={`card-wrapper ${url && "clickable"} ${className}`}>
-  <slot />
-</Wrapper>
+<div>
+  <Wrapper href={url} class={`card-wrapper ${url && "clickable"} ${className}`}>
+    <slot />
+  </Wrapper>
+</div>
 
-<style>
+<style
+  define:vars={{
+    paddingSize: typeof padding == "string" ? padding : `${padding}px`,
+  }}
+>
   .card-wrapper {
-    padding: 1em;
+    padding: var(--paddingSize);
     background-color: var(--color-secondary);
     border: var(--border-width) solid var(--color-card-text);
     border-radius: 10px;

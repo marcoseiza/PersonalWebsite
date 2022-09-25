@@ -1,4 +1,10 @@
-<main class="retro-scroll">
+---
+export interface Props {
+  className?: string;
+}
+---
+
+<main class:list={["retro-scroll", Astro.props.className || ""]}>
   <slot />
 </main>
 

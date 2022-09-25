@@ -1,0 +1,15 @@
+---
+import Flex from "./flex.astro";
+import Button from "./button.astro";
+import Github from "./custom-icons/github.astro";
+import { Article } from "phosphor-react";
+---
+
+<Flex direction="row" align="center" justify="center" gap={10}>
+  <Button url="https://github.com/marcoseiza" text="My Work" forceWidth={160}>
+    <Github size={32} />
+  </Button>
+  <Button url="/blog" text="My Blog" forceWidth={160} elevation={1}>
+    <Article size={32} weight="bold" />
+  </Button>
+</Flex>

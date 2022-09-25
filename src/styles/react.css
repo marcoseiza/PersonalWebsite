@@ -65,6 +65,12 @@ a.react-card:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 10em;
+}
+
+.react-article-date {
+  display: inline-block;
+  min-width: 10em;
 }
 
 @keyframes Pulsate {
@@ -74,6 +80,15 @@ a.react-card:hover {
 }
 
 .react-loading-skeleton {
-  animation: Pulsate var(--animation-duration) linear infinite;
+  width: 100%;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  line-height: 1;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1; 
+
+  animation: Pulsate 1.5s linear infinite;
   background-image: url(/img/checker.png);
 }

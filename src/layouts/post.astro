@@ -1,9 +1,14 @@
 ---
 import HtmlHead from "../layouts/html-head.astro";
-import SimpleHeader from "../components/simple-header.astro";
 import type { MarkdownLayoutProps } from "astro";
 import Separator from "../components/separator.astro";
 import MdStyling from "../components/md-styling.astro";
+import RetroScroll from "../components/retro-scroll.astro";
+import Button from "../components/button.astro";
+import { ArrowLeft, Article, House } from "phosphor-react";
+import WindowTitleBar from "../components/window-title-bar.astro";
+import Card from "../components/card.astro";
+import Container from "../components/container.astro";
 
 type Props = MarkdownLayoutProps<{
   title: string;
@@ -13,16 +18,34 @@ const { frontmatter } = Astro.props as Props;
 ---
 
 <HtmlHead title={frontmatter.title}>
-  <SimpleHeader title={"👨‍💻 My Blog"} homeUrl="/" blogUrl="/blog">
-    <div class="background">
-      <h4 class="fancy-text">{frontmatter.title}</h4>
-      <h4>{frontmatter.date}</h4>
-      <Separator showLine lineHeight={3.5} parentPadding="2em" />
-      <MdStyling>
-        <slot />
-      </MdStyling>
-    </div>
-  </SimpleHeader>
+  <WindowTitleBar>
+    <Button text="HOME" url={"/"} size={"small"} elevation={1}>
+      <House size={20} weight="fill" />
+    </Button>
+    <Button text="BLOG" url={"/blog"} size={"small"} elevation={1}>
+      <Article size={20} weight="fill" />
+    </Button>
+  </WindowTitleBar>
+  <RetroScroll className="scroll">
+    <Container padding={2} maxWidth={900}>
+      <Button text="BACK" className={"back-button"} url={"/blog"}>
+        <ArrowLeft size={25} weight="bold" />
+      </Button>
+      <Separator />
+      <Card padding="1.5em  2em">
+        <h4 class="fancy-text">{frontmatter.title}</h4>
+        <h4>{frontmatter.date}</h4>
+        <Separator showLine lineHeight={3.5} parentPadding="2em" />
+        <MdStyling>
+          <slot />
+        </MdStyling>
+      </Card>
+      <Separator marginBottom="2em" />
+      <Button text="BACK" className={"back-button"} url={"/blog"}>
+        <ArrowLeft size={25} weight="bold" />
+      </Button>
+    </Container>
+  </RetroScroll>
 </HtmlHead>
 
 <style is:inline>
@@ -31,18 +54,16 @@ const { frontmatter } = Astro.props as Props;
   }
 
   main {
-    padding: 2em;
-    padding-top: 3em;
     --box-shadow: 3px 3px 0 black;
     --box-shadow-hover: 1px 1px 0 black;
   }
 
-  .background {
-    border: var(--border-width) solid black;
-    box-shadow: 7px 7px 0px black;
-    background-color: var(--color-secondary);
-    padding: 2em;
-    padding-top: 1em;
-    border-radius: 15px;
+  .scroll {
+    height: 100vh;
+    padding-top: 3em;
+  }
+
+  .back-button {
+    display: inline-block;
   }
 </style>

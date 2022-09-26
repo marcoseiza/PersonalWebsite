@@ -3,6 +3,7 @@ title: "Test Markdown"
 slug: "d6578985-db57-471b-ad5d-43d333b1eb51"
 date: "23 Sep 2022 10:57 AM"
 excerpt: "This is a test markdown for styling and parsing."
+archive: true
 ---
 
 - [x] Write the press release

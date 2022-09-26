@@ -1,0 +1,12 @@
+---
+import Post from "../../layouts/post-layout.astro";
+const { slug } = Astro.params;
+
+const post = (await Astro.glob("../../posts/*.md")).find(
+  (p) => p.frontmatter.slug === slug
+);
+---
+
+<Post title={post?.frontmatter.title} date={post?.frontmatter.date}>
+  {post && <post.Content />}
+</Post>

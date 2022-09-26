@@ -1,23 +1,21 @@
 ---
-import HtmlHead from "../layouts/html-head.astro";
-import type { MarkdownLayoutProps } from "astro";
+import BaseLayout from "../layouts/base-layout.astro";
 import Separator from "../components/separator.astro";
 import MdStyling from "../components/md-styling.astro";
 import RetroScroll from "../components/retro-scroll.astro";
 import Button from "../components/button.astro";
 import { ArrowLeft, Article, House } from "phosphor-react";
 import WindowTitleBar from "../components/window-title-bar.astro";
-import Card from "../components/card.astro";
 import Container from "../components/container.astro";
-
-type Props = MarkdownLayoutProps<{
+import Card from "../components/card.astro";
+export interface Props {
   title: string;
   date: string;
-}>;
-const { frontmatter } = Astro.props as Props;
+}
+const { title, date } = Astro.props as Props;
 ---
 
-<HtmlHead title={frontmatter.title}>
+<BaseLayout title={title}>
   <WindowTitleBar sticky>
     <Button text="HOME" url={"/"} size={"small"} elevation={1}>
       <House size={20} weight="fill" />
@@ -33,8 +31,8 @@ const { frontmatter } = Astro.props as Props;
       </Button>
       <Separator />
       <Card padding="1.5em  2em">
-        <h4 class="fancy-text">{frontmatter.title}</h4>
-        <h4>{frontmatter.date}</h4>
+        <h4 class="fancy-text">{title}</h4>
+        <h4>{date}</h4>
         <Separator showLine lineHeight={3.5} parentPadding="2em" />
         <MdStyling>
           <slot />
@@ -46,7 +44,7 @@ const { frontmatter } = Astro.props as Props;
       </Button>
     </Container>
   </RetroScroll>
-</HtmlHead>
+</BaseLayout>
 
 <style is:inline>
   body {

@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/post.astro
 title: "Test Markdown"
+slug: "d6578985-db57-471b-ad5d-43d333b1eb51"
 date: "23 Sep 2022 10:57 AM"
 excerpt: "This is a test markdown for styling and parsing."
 ---
@@ -13,6 +13,8 @@ excerpt: "This is a test markdown for styling and parsing."
 ## h2 Test
 ### h3 Test
 #### h4 Test
+
+Here's a sentence with a footnote. [^1]
 
 | Syntax | Description |
 | ----------- | ----------- |
@@ -46,6 +48,5 @@ feafeagf
 
 *Italics*
 
-Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.

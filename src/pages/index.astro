@@ -1,5 +1,5 @@
 ---
-import HtmlHead from "../layouts/html-head.astro";
+import BaseLayout from "../layouts/base-layout.astro";
 import Section from "../components/section.astro";
 import Card from "../components/card.astro";
 import Container from "../components/container.astro";
@@ -13,7 +13,7 @@ import RetroScroll from "../components/retro-scroll.astro";
 const about = (await Astro.glob("../content/about.md"))[0];
 ---
 
-<HtmlHead title="👋 Hi | Marcos Eizayaga">
+<BaseLayout title="👋 Hi | Marcos Eizayaga">
   <WindowTitleBar sticky />
   <RetroScroll className={"scroll"} fullpage>
     <Section scrollIndicator scrollTo="#about">
@@ -48,7 +48,7 @@ const about = (await Astro.glob("../content/about.md"))[0];
       </Flex>
     </Container>
   </RetroScroll>
-</HtmlHead>
+</BaseLayout>
 
 <style>
   body {

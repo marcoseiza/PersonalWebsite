@@ -92,3 +92,45 @@ a.react-card:hover {
   animation: Pulsate 1.5s linear infinite;
   background-image: url(/img/checker.png);
 }
+
+.react-card .react-preview {
+  --delay: 0s;
+  overflow: hidden;
+  position: relative;
+  max-height: 0;
+  opacity: 0;
+
+  transition: all 200ms ease-in-out var(--delay);
+}
+
+.react-card:hover .react-preview {
+  --delay: 1.5s;
+  margin-top: 1em;
+  opacity: 1;
+  max-height: 300px;
+}
+
+.react-card .react-preview .react-preview-label {
+  position: absolute;
+  right: 1em;
+  padding: 0.5em 0.8em;
+  background-color: var(--color-secondary);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 4px 4px 0 black;
+  border-bottom: var(--border-width) solid black;
+  border-left: var(--border-width) solid black;
+  border-right: var(--border-width) solid black;
+}
+
+.react-card .react-preview .react-preview-label h3 {
+  color: var(--color-card-text);
+}
+
+.react-card .react-preview .react-preview-content {
+  padding: 1em;
+  border-radius: 10px;
+  border: var(--border-width) solid black;
+  max-height: inherit;
+  box-shadow: inset 4px 4px 0 black;
+}

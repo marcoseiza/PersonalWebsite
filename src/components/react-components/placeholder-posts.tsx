@@ -1,11 +1,11 @@
-import Post from "./post";
+import PostCard from "./post-card";
 
 export default function PlaceHolderPosts() {
   return (
     <>
-      <Post key={0} />
-      <Post key={1} />
-      <Post key={2} />
+      <PostCard key={0} />
+      <PostCard key={1} />
+      <PostCard key={2} />
     </>
   );
 }

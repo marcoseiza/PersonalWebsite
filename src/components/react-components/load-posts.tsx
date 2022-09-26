@@ -1,35 +1,54 @@
 import { useEffect, useState } from "react";
+import {
+  fetchPostImportModules,
+  updatePostUrl,
+  Module,
+  isValidPost,
+  sortPosts,
+} from "../../helpers/";
 import type { MDInstance } from "../../helpers/types";
 import PlaceHolderPosts from "./placeholder-posts";
-import Post from "./post";
+import PostCard from "./post-card";
 
-const postComparator = (a: MDInstance, b: MDInstance) =>
-  new Date(b.frontmatter.date).getTime() -
-  new Date(a.frontmatter.date).getTime();
-
-export default function LoadPosts() {
+export default function LoadPosts(props: any) {
+  const [modules, setModules] = useState<Module<MDInstance>[]>([]);
   const [posts, setPosts] = useState<MDInstance[]>([]);
+  const [isDoneLoading, setDoneLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    Object.values(import.meta.glob("../../pages/posts/*.md") as any).map(
-      (v: any) =>
-        v().then((post: MDInstance) => {
-          setPosts((curPosts) => curPosts.concat(post));
-        })
-    );
+    const modules = fetchPostImportModules();
+    setModules(modules);
+    modules.map(async (v: Module<MDInstance>) => {
+      const post = await v();
+      setPosts((posts) => sortPosts(posts.concat(post)));
+    });
   }, []);
 
-  const id = posts.length > 0 ? "posts-loaded" : "loading-posts";
+  useEffect(() => {
+    setDoneLoading(posts.length === modules.length);
+  }, [posts]);
+
+  const render = () => {
+    if (posts.length === 0) {
+      return <PlaceHolderPosts />;
+    }
+
+    const filteredPosts = posts.filter(isValidPost);
+    if (filteredPosts.length === 0) {
+      return props.noPosts;
+    }
+
+    return filteredPosts.map((p, i) => (
+      <PostCard post={updatePostUrl(p)} key={i} />
+    ));
+  };
 
   return (
-    <ul className={"react-article-list"} id={id}>
-      {posts.length > 0 ? (
-        posts
-          .sort(postComparator)
-          .map((p, i) => !p.frontmatter.draft && <Post post={p} key={i} />)
-      ) : (
-        <PlaceHolderPosts />
-      )}
+    <ul
+      className={"react-article-list"}
+      id={isDoneLoading ? "posts-loaded" : "loading-posts"}
+    >
+      {render()}
     </ul>
   );
 }

@@ -2,13 +2,13 @@
 import BaseLayout from "../layouts/base-layout.astro";
 import Container from "../components/container.astro";
 import Flex from "../components/flex.astro";
-import LoadPosts from "../components/react-components/load-posts";
 import WindowTitleBar from "../components/window-title-bar.astro";
 import { Article, House } from "phosphor-react";
 import Button from "../components/button.astro";
 import RetroScroll from "../components/retro-scroll.astro";
-import WarningBanner from "../components/warning-banner.astro";
-import Card from "../components/card.astro";
+import PostCard from "../components/react-components/post-card";
+
+const posts = await Astro.glob("./posts/*.md");
 ---
 
 <BaseLayout title="👨‍💻 My Blog | Marcos Eizayaga">
@@ -16,30 +16,16 @@ import Card from "../components/card.astro";
     <Button text="HOME" url={"/"} size={"small"} elevation={1}>
       <House size={20} weight="fill" />
     </Button>
-    <Button text="BLOG" url={"/blog"} size={"small"} elevation={1}>
+    <Button text="BLOG" url={"/front-load-blog"} size={"small"} elevation={1}>
       <Article size={20} weight="fill" />
     </Button>
   </WindowTitleBar>
   <RetroScroll className="scroll" fullpage>
     <Container padding={2} maxWidth={900}>
       <Flex direction="column" align="stretch" justify="flex-start" gap={10}>
-        <WarningBanner id={"warning"}>
-          Blog does not currently work on Safari. 🥲<br />
-          Please use a Chromium or Mozilla based browser instead.
-        </WarningBanner>
-        <script>
-          setTimeout(() => {
-            if (!document.getElementById("posts-loaded")) {
-              const element = document.getElementById("warning");
-              if (element) element.style.display = "block";
-            }
-          }, 3000);
-        </script>
-        <LoadPosts client:idle>
-          <Card slot="noPosts">
-            <h3>No posts right now, come back later :(</h3>
-          </Card>
-        </LoadPosts>
+        <ul>
+          {posts.map((post) => <PostCard post={post} />)}
+        </ul>
       </Flex>
     </Container>
   </RetroScroll>
@@ -51,7 +37,7 @@ import Card from "../components/card.astro";
     background-color: var(--color-background);
   }
 
-  ::global(#warning) {
-    display: none;
+  ul {
+    list-style: none;
   }
 </style>

@@ -28,6 +28,15 @@ export default function Post({ post }: PostProps) {
         <h4 className="react-article-date">
           {post?.frontmatter.date || <Skeleton />}
         </h4>
+        <div className="react-preview">
+          <div className="react-preview-label">
+            <h3>PREVIEW</h3>
+          </div>
+          <div
+            className="react-preview-content md"
+            dangerouslySetInnerHTML={{ __html: post?.compiledContent() || "" }}
+          ></div>
+        </div>
       </a>
     </li>
   );

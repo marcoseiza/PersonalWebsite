@@ -134,3 +134,9 @@ a.react-card:hover {
   max-height: inherit;
   box-shadow: inset 4px 4px 0 black;
 }
+
+@media screen and (max-width: 600px) {
+  .react-card .react-article-title {
+    font-size: 1.2em;
+  }
+}

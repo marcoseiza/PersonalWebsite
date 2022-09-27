@@ -34,6 +34,16 @@
   margin-bottom: 0.5em;
 }
 
+@media screen and (max-width: 600px) {
+  .md h1 {
+    font-size: 1.7em;
+  }
+
+  .md h2 {
+    font-size: 1.5em;
+  }
+}
+
 .md a {
   display: inline-block;
   font-size: 0.85em;
@@ -48,7 +58,7 @@
   transition: all 100ms ease-in-out;
   overflow: hidden;
   margin-right: 0.2em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 .md a:hover {
@@ -64,41 +74,54 @@
   max-width: 100%;
 }
 
-.md img[alt*="icon"] {
+.md img[alt*="icon"], .md img[alt*="icon-rounded"] {
   display: inline;
   width: 1em;
   background: none;
   border: none;
   box-shadow: none;
-  vertical-align: middle;
-  margin-bottom: 0.1em;
-  margin-left: -0.1em;
-  margin-right: -0.1em;
   border-radius: 0;
   padding: 0;
 }
 
 .md img[alt*="icon-rounded"] {
-  display: inline;
-  width: 1em;
-  background: none;
-  border: none;
-  box-shadow: none;
+  border-radius: 5px;
+}
+
+.md img[alt *="middle"] {
   vertical-align: middle;
   margin-bottom: 0.1em;
-  margin-left: -0.1em;
-  margin-right: -0.1em;
-  border-radius: 5px;
-  padding: 0;
 }
 
 .md a img {
   border: none;
   box-shadow: none;
-  padding: 0.3em 0 0 0;
-  border-radius: 0;
   margin: 0 -0.3em -0.3em -0.3em;
+  border-radius: 0;
   max-width: none;
+}
+
+.md a[title="banner"] {
+  display: block;
+  padding: 0;
+}
+
+.md a[title="banner"] img {
+  margin: 0;
+  display: block;
+  width: 103%;
+}
+
+.md a[title="icon-text-link"] {
+  display: inline-flex;
+  padding: 0 0.3em 0 0.2em;
+  padding-bottom: 0.1em;
+  gap: 0.2em;
+  align-items: center;
+}
+
+.md a[title="icon-text-link"] img {
+  margin: 0;
 }
 
 .md table {

@@ -3,12 +3,14 @@ import BaseLayout from "../layouts/base-layout.astro";
 import Container from "../components/container.astro";
 import Flex from "../components/flex.astro";
 import LoadPosts from "../components/react-components/load-posts";
+import LoadTasks from "../components/react-components/load-tasks";
 import WindowTitleBar from "../components/window-title-bar.astro";
 import { Article, House } from "phosphor-react";
 import Button from "../components/button.astro";
 import RetroScroll from "../components/retro-scroll.astro";
 import WarningBanner from "../components/warning-banner.astro";
 import Card from "../components/card.astro";
+import type { Metadata } from "astro/dist/runtime/server";
 ---
 
 <BaseLayout title="👨‍💻 My Blog | Marcos Eizayaga">
@@ -35,6 +37,7 @@ import Card from "../components/card.astro";
             }
           }, 3000);
         </script>
+        <LoadTasks databaseId={import.meta.env.NOTION_TASK_DB_ID} client:idle />
         <LoadPosts client:idle>
           <Card slot="noPosts">
             <h3>No posts right now, come back later :(</h3>

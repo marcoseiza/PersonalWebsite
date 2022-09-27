@@ -39,7 +39,7 @@ export default function LoadPosts(props: any) {
     }
 
     return filteredPosts.map((p, i) => (
-      <PostCard post={updatePostUrl(p)} key={i} />
+      <PostCard post={updatePostUrl(p)} key={i} showPreview={false} />
     ));
   };
 

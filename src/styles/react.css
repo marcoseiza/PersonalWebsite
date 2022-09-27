@@ -140,3 +140,58 @@ a.react-card:hover {
     font-size: 1.2em;
   }
 }
+
+.react-task-board {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  --todo-color: rgb(215, 71, 71);
+  --doing-color: rgb(231, 180, 86);
+  --done-color: rgb(127, 220, 101);
+  gap: 1em;
+}
+
+.react-task-column {
+  width: 100%;
+  min-width: 0;
+}
+
+.react-task-column ul {
+  margin-left: 1em;
+}
+
+.react-task-column ul.react-task-column-skeleton {
+  margin-left: 0;
+}
+
+.react-task-column .react-task-column-title {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+  padding-bottom: 0.3em;
+  position: relative;
+}
+
+.react-task-column .react-task-column-title::after {
+  content: " ";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: var(--border-width);
+  border-radius: 10px;
+  background-color: var(--color-card-text);
+}
+
+.react-task-column .react-task-column-icon {
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+
+.react-task-column .react-task-column-icon svg {
+  display: block;
+}
+
+.react-task-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}

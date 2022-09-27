@@ -26,3 +26,28 @@ export const sortPosts = (posts: MDInstance[]) => posts.sort(postComparator);
 
 export const filterAndSortPosts = (posts: MDInstance[]) : MDInstance[] => 
   sortPosts(posts.filter(isValidPost))
+
+export interface Tasks {
+  ToDo: string[];
+  Doing: string[];
+  Done: string[];
+}
+
+export const DefaultTasks = () : Tasks=> ({
+  ToDo: [],
+  Doing: [],
+  Done: []
+})
+
+export interface TaskDBEntry {
+  properties: {
+    Status: {
+      select: {
+        name: keyof Tasks;
+      };
+    };
+    Name: {
+      title: { text: { content: string } }[];
+    };
+  };
+}

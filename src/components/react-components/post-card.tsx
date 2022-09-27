@@ -4,9 +4,10 @@ import Skeleton from "./skeleton";
 
 interface PostProps {
   post?: MDInstance;
+  showPreview: boolean;
 }
 
-export default function Post({ post }: PostProps) {
+export default function Post({ post, showPreview }: PostProps) {
   return (
     <li>
       <a className={"react-card"} href={post?.url}>
@@ -28,15 +29,19 @@ export default function Post({ post }: PostProps) {
         <h4 className="react-article-date">
           {post?.frontmatter.date || <Skeleton />}
         </h4>
-        <div className="react-preview">
-          <div className="react-preview-label">
-            <h3>PREVIEW</h3>
+        {showPreview && (
+          <div className="react-preview">
+            <div className="react-preview-label">
+              <h3>PREVIEW</h3>
+            </div>
+            <div
+              className="react-preview-content md"
+              dangerouslySetInnerHTML={{
+                __html: post?.compiledContent() || "",
+              }}
+            ></div>
           </div>
-          <div
-            className="react-preview-content md"
-            dangerouslySetInnerHTML={{ __html: post?.compiledContent() || "" }}
-          ></div>
-        </div>
+        )}
       </a>
     </li>
   );

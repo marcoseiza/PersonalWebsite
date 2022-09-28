@@ -1,35 +1,30 @@
+import { Circle } from "phosphor-react";
+import type { TaskGroup } from "../../helpers";
 import Skeleton from "./skeleton";
 
 interface TaskColumnProps {
-  name: string;
-  icon?: JSX.Element;
-  tasks: string[];
-  isDoneLoading: boolean;
+  group?: TaskGroup;
 }
 
-export default function TaskColumn({
-  name,
-  icon,
-  tasks,
-  isDoneLoading,
-}: TaskColumnProps) {
-  // isDoneLoading = false;
+export default function TaskColumn({ group }: TaskColumnProps) {
   return (
     <div className="react-task-column react-flex column">
       <div className="react-task-column-title">
-        <div className="react-task-column-icon">{icon}</div>
-        <h3>{name}</h3>
+        <div className="react-task-column-icon">
+          <Circle
+            size={24}
+            weight="fill"
+            color={`var(--group-color-${group?.groupInfo.color || "black"})`}
+          />
+        </div>
+        <h3>{group?.groupInfo.name || <Skeleton />}</h3>
       </div>
-      <ul className={!isDoneLoading ? "react-task-column-skeleton" : ""}>
-        {isDoneLoading ? (
-          tasks.map((task, i) => (
-            <li className="react-task-column-item" key={i}>
-              <h4 className="react-task-column-item-desc">{task}</h4>
-            </li>
-          ))
-        ) : (
-          <Skeleton />
-        )}
+      <ul className={group ? "" : "react-task-column-skeleton"}>
+        {group?.tasks.map((task, i) => (
+          <li className="react-task-column-item" key={i}>
+            <h4 className="react-task-column-item-desc">{task.name}</h4>
+          </li>
+        )) || <Skeleton />}
       </ul>
     </div>
   );

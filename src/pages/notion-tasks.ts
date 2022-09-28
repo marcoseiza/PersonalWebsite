@@ -1,5 +1,14 @@
 import { Client } from "@notionhq/client";
-import { Tasks, TaskDBEntry, DefaultTasks } from "../helpers";
+import {
+  TaskGroupInfo,
+  Task,
+  TaskBoard,
+  parseTasks,
+  parseGroups,
+  DefaultTaskBoardWithGroupInfos,
+  FillTaskBoard,
+  TaskBoardToResponseBody
+} from "../helpers";
 
 export async function post({ request }: any) {
   const data = await request.json();
@@ -11,23 +20,23 @@ export async function post({ request }: any) {
   }
   
   const notion = new Client({ auth: import.meta.env.NOTION_SECRET })
-  const tasks: Tasks = DefaultTasks();
+  let tasks: Task[];
+  let groupInfos: TaskGroupInfo[];
   
   try {
-    const tasksDB = (await notion.databases.query({ 
-      database_id: data.database_id 
-    })) as unknown as { results: TaskDBEntry[] };
-    
-    tasksDB.results.slice(0, -1).map((v: TaskDBEntry) => {
-      tasks[v.properties.Status.select.name].push(
-        v.properties.Name.title[0].text.content
-      );
-    });
+    tasks = await notion.databases.query({ 
+      database_id: data.database_id
+    }).then((r: any) => parseTasks(r));
+    groupInfos = await notion.databases.retrieve({ 
+      database_id: data.database_id
+    }).then((r: any) => parseGroups(r));
   } catch (e) {
     return new Response(JSON.stringify({ 
       statusText: 'Database not found'
     }), { status: 400});
   }
 
-  return new Response(JSON.stringify({ tasks }), { status: 200 });
+  const taskBoard: TaskBoard = DefaultTaskBoardWithGroupInfos(groupInfos);
+  FillTaskBoard(taskBoard, tasks);
+  return new Response(TaskBoardToResponseBody(taskBoard), { status: 200 });
 }

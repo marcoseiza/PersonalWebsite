@@ -12,7 +12,9 @@ export default function TaskCard({ taskBoard }: TaskCardProps) {
   return (
     <div className="react-card">
       <div className="react-task-card-title">
-        <NotionLogo />
+        <div className="react-task-card-title-logo">
+          <NotionLogo />
+        </div>
         <h2 className="fancy-text react-article-title">My Current Tasks</h2>
       </div>
       <div className="react-task-board">

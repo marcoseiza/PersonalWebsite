@@ -145,6 +145,7 @@ a.react-card:hover {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   --group-color-black: black;
   --group-color-red: rgb(215, 71, 71);
   --group-color-yellow: rgb(231, 180, 86);
@@ -186,6 +187,7 @@ a.react-card:hover {
 .react-task-column .react-task-column-icon {
   margin-right: 0.3em;
   vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .react-task-column .react-task-column-icon svg {
@@ -196,4 +198,8 @@ a.react-card:hover {
   display: flex;
   align-items: center;
   gap: 0.5em;
+}
+
+.react-task-card-title-logo {
+  flex-shrink: 0;
 }

@@ -104,12 +104,13 @@
 .md a[title="banner"] {
   display: block;
   padding: 0;
+  margin-bottom: 2em;
 }
 
 .md a[title="banner"] img {
   margin: 0;
   display: block;
-  width: 103%;
+  width: 100%;
 }
 
 .md a[title="icon-text-link"] {
@@ -160,6 +161,11 @@
   margin: 1em 0;
   border: var(--border-width) solid black;
   box-shadow: var(--box-shadow);
+}
+
+.md pre code {
+  background-color: transparent;
+  padding: 0;
 }
 
 .md ul,
@@ -273,4 +279,43 @@
   color: #363636;
   padding: 0.15em 0.3em;
   border-radius: 5px;
+}
+
+.md iframe {
+  border-radius: 10px;
+  max-width: 100%;
+  border: 2px solid black;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1em;
+}
+
+.md figure {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-width) solid black;
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+.md figure img {
+  border: none;
+  border-radius: 0;
+}
+
+.md figure figcaption {
+  padding: 0.5em;
+  background-color: var(--color-secondary-dark);
+  color: var(--color-card-text);
+  font-weight: bold;
+  text-align: center;
+}
+
+.md figure figcaption:last-child {
+  border-top: var(--border-width) solid black;
+}
+
+.md figure figcaption:first-child {
+  border-bottom: var(--border-width) solid black;
 }

@@ -8,6 +8,7 @@ import { ArrowLeft, Article, House } from "phosphor-react";
 import WindowTitleBar from "../components/window-title-bar.astro";
 import Container from "../components/container.astro";
 import Card from "../components/card.astro";
+import Flex from "../components/flex.astro";
 export interface Props {
   title: string;
   date: string;
@@ -31,8 +32,18 @@ const { title, date } = Astro.props as Props;
       </Button>
       <Separator />
       <Card padding="1.5em  2em">
-        <h4 class="fancy-text">{title}</h4>
-        <h4>{date}</h4>
+        <Flex align={"center"}>
+          <Article
+            size={32}
+            weight="bold"
+            color="var(--color-card-text)"
+            style={{
+              marginRight: "1em",
+              flexShrink: 0,
+            }}
+          />
+          <h3>{date}</h3>
+        </Flex>
         <Separator showLine lineHeight={3.5} parentPadding="2em" />
         <MdStyling>
           <slot />

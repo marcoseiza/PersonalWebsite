@@ -17,15 +17,17 @@ export default function LoadTasks({ databaseId }: LoadTasksProps) {
     DefaultTaskBoard(numberOfTaskGroupSkeletons)
   );
 
+  const getTasks = async (allPosts: boolean) => {
+    const response = await fetch("./notion-tasks", {
+      method: "POST",
+      body: JSON.stringify({ database_id: databaseId, all_posts: allPosts }),
+    });
+    setTaskBoard(ResponseJsonToTaskBoard(await response.json()));
+  };
+
   useEffect(() => {
-    (async () => {
-      const response = await fetch("./notion-tasks", {
-        method: "POST",
-        body: JSON.stringify({ database_id: databaseId }),
-      });
-      setTaskBoard(ResponseJsonToTaskBoard(await response.json()));
-    })();
+    getTasks(false);
   }, []);
 
-  return <TaskCard taskBoard={taskBoard} />;
+  return <TaskCard taskBoard={taskBoard} getAllTasks={() => getTasks(true)} />;
 }

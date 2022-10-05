@@ -146,10 +146,6 @@ a.react-card:hover {
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  --group-color-black: black;
-  --group-color-red: rgb(215, 71, 71);
-  --group-color-yellow: rgb(231, 180, 86);
-  --group-color-green: rgb(127, 220, 101);
   gap: 1em;
 }
 
@@ -202,4 +198,25 @@ a.react-card:hover {
 
 .react-task-card-title-logo {
   flex-shrink: 0;
+}
+
+.react-task-card-load-more {
+  display: block;
+  background-color: transparent;
+  border: var(--border-width) solid black;
+  padding: 0.4em 0.5em;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: bold;
+  box-shadow: 3px 3px 0px black;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-task-card-load-more:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px black;
 }

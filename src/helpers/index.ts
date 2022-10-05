@@ -29,11 +29,12 @@ export const filterAndSortPosts = (posts: MDInstance[]) : MDInstance[] =>
 
 export type TaskGroupId = string;
 export interface TaskGroupInfo { id: TaskGroupId; name: string; color: string; }
-export type Task = { groupId: TaskGroupId, name: string; }
-export type TaskGroup = { groupInfo: TaskGroupInfo, tasks: Task[] };
+export type Task = { groupId: TaskGroupId, name: string; lastEditedTime: Date; }
+export type TaskGroup = { groupInfo: TaskGroupInfo, tasks: Task[], numberOfUnloadedPosts: number };
 export type TaskBoard = Map<string, TaskGroup>;
 export type QueryDatabaseResponse = { results: QueryTaskDBEntry[] };
 export interface QueryTaskDBEntry {
+  last_edited_time: string,
   properties: {
     Status: { select: TaskGroupInfo; };
     Name: { title: { text: { content: string } }[]; };
@@ -44,13 +45,16 @@ export interface GetDatabaseResponse {
 }
 
 export const DefaultTaskGroup = (groupInfo: TaskGroupInfo) : TaskGroup => ({
-  groupInfo, tasks: []
+  groupInfo, tasks: [], numberOfUnloadedPosts: 0
 });
 export const DefaultTaskBoard = (numOfGroups: number) : TaskBoard => 
   new Map<TaskGroupId, TaskGroup>(new Array(numOfGroups).fill(undefined).map((v, i) => [i.toString(), v]));
 export const DefaultTaskBoardWithGroupInfos = (groupInfos: TaskGroupInfo[]) : TaskBoard => 
   new Map<TaskGroupId, TaskGroup>(groupInfos.map(info => [info.id, DefaultTaskGroup(info)]))
-export const FillTaskBoard = (board: TaskBoard, tasks: Task[]) => {
+export const sortTasks = (a: Task, b: Task) =>
+  b.lastEditedTime.getTime() - a.lastEditedTime.getTime();
+export const MAX_NUMBER_OF_TASKS_PER_GROUP = 4;
+export const FillTaskBoard = (board: TaskBoard, tasks: Task[], allPosts: boolean) => {
   tasks.forEach((task) => {
     const prevGroup = board.get(task.groupId);
     prevGroup && board.set(task.groupId, {
@@ -58,6 +62,15 @@ export const FillTaskBoard = (board: TaskBoard, tasks: Task[]) => {
       tasks: prevGroup.tasks.concat(task)
     });
   });
+  board.forEach((v, k, m) => {
+    let tasks = v.tasks.sort(sortTasks);
+    let numberOfUnloadedPosts = 0;
+    if (!allPosts) {
+      tasks = tasks.slice(0, MAX_NUMBER_OF_TASKS_PER_GROUP);
+      numberOfUnloadedPosts = Math.max(v.tasks.length - MAX_NUMBER_OF_TASKS_PER_GROUP, 0);
+    }
+    m.set(k, {...v, tasks, numberOfUnloadedPosts})
+  })
 }
 export const TaskBoardToResponseBody = (board: TaskBoard): string => 
   JSON.stringify({ board: JSON.stringify(Array.from(board)) });
@@ -68,7 +81,8 @@ export const parseTasks = (db: QueryDatabaseResponse) : Task[] => {
   const taskEntries: QueryTaskDBEntry[] = db.results.slice(0, -1);
   return taskEntries.map(v => ({
     groupId: v.properties.Status.select.id,
-    name: v.properties.Name.title[0].text.content
+    name: v.properties.Name.title[0].text.content,
+    lastEditedTime: new Date(v.last_edited_time)
   }));
 };
 export const parseGroups = (db: GetDatabaseResponse) : TaskGroupInfo[] => (

@@ -37,6 +37,6 @@ export async function post({ request }: any) {
   }
 
   const taskBoard: TaskBoard = DefaultTaskBoardWithGroupInfos(groupInfos);
-  FillTaskBoard(taskBoard, tasks);
+  FillTaskBoard(taskBoard, tasks, data.all_posts || false);
   return new Response(TaskBoardToResponseBody(taskBoard), { status: 200 });
 }

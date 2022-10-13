@@ -18,10 +18,13 @@ export default function TaskCard({ taskBoard, getAllTasks }: TaskCardProps) {
   return (
     <div className="react-card">
       <div className="react-task-card-title">
-        <div className="react-task-card-title-logo">
-          <NotionLogo />
-        </div>
         <h2 className="fancy-text react-article-title">My Current Tasks</h2>
+        <div className="react-task-card-powered-by-notion">
+          <div className="react-task-card-title-logo">
+            <NotionLogo />
+          </div>
+          <h4>Powered by Notion</h4>
+        </div>
       </div>
       <div className="react-task-board">
         {taskGroups.map((group, i) => {

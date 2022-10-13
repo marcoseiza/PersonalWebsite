@@ -192,12 +192,24 @@ a.react-card:hover {
 
 .react-task-card-title {
   display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.react-task-card-powered-by-notion {
+  display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
 .react-task-card-title-logo {
+  display: flex;
   flex-shrink: 0;
+}
+
+.react-task-card-title-logo svg {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .react-task-card-load-more {

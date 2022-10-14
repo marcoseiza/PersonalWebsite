@@ -1,3 +1,4 @@
+import type { MarkdownHeading } from "astro";
 import type { MDInstance } from "./types";
 
 export type Module<T> = () => Promise<T>;

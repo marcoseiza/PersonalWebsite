@@ -5,7 +5,13 @@
 	--color-secondary-dark: rgb(220, 210, 196);
 	--color-background: rgb(253, 191, 101);
 	--color-card-text: black;
-	--border-width: 3.5px
+	--border-width: 3.5px;
+
+	font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 html {

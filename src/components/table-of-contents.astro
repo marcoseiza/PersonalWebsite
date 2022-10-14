@@ -1,0 +1,38 @@
+---
+import type { MarkdownHeading } from "astro";
+
+export interface Props {
+  headings: MarkdownHeading[];
+}
+const { headings } = Astro.props as Props;
+---
+
+<ol class="table-of-contents">
+  {
+    headings.map((h) => {
+      return (
+        <li class:list={["table-of-contents-item", `depth-${h.depth}`]}>
+          {new Array(h.depth - 1).fill(undefined).map(() => {
+            return <span>&emsp;</span>;
+          })}
+          <a href={`#${h.slug}`}>
+            <p>
+              {`#h${h.depth}`} {h.text}
+            </p>
+          </a>
+        </li>
+      );
+    })
+  }
+</ol>
+
+<style>
+  .table-of-contents-item {
+    display: flex;
+    list-style: none;
+  }
+
+  .table-of-contents-item.depth-1 {
+    font-weight: bold;
+  }
+</style>

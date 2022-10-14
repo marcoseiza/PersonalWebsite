@@ -9,11 +9,14 @@ import WindowTitleBar from "../components/window-title-bar.astro";
 import Container from "../components/container.astro";
 import Card from "../components/card.astro";
 import Flex from "../components/flex.astro";
+import TableOfContents from "../components/table-of-contents.astro";
+import type { MarkdownHeading } from "astro";
 export interface Props {
   title: string;
   date: string;
+  headings: MarkdownHeading[];
 }
-const { title, date } = Astro.props as Props;
+const { title, date, headings } = Astro.props as Props;
 ---
 
 <BaseLayout title={title}>
@@ -32,17 +35,23 @@ const { title, date } = Astro.props as Props;
       </Button>
       <Separator />
       <Card padding="1.5em  2em">
-        <Flex align={"center"}>
-          <Article
-            size={32}
-            weight="bold"
-            color="var(--color-card-text)"
-            style={{
-              marginRight: "1em",
-              flexShrink: 0,
-            }}
-          />
-          <h3>{date}</h3>
+        <Flex direction="column">
+          <Flex align={"center"}>
+            <Article
+              size={32}
+              weight="bold"
+              color="var(--color-card-text)"
+              style={{
+                marginRight: "1em",
+                flexShrink: 0,
+              }}
+            />
+            <h3>{date}</h3>
+          </Flex>
+          <details class="table-of-contents">
+            <summary><b>Table Of Contents</b></summary>
+            <TableOfContents headings={headings} />
+          </details>
         </Flex>
         <Separator showLine lineHeight={3.5} parentPadding="2em" />
         <MdStyling>
@@ -65,5 +74,10 @@ const { title, date } = Astro.props as Props;
 
   .back-button {
     display: inline-block;
+  }
+
+  .table-of-contents {
+    cursor: pointer;
+    margin-left: 0.2em;
   }
 </style>

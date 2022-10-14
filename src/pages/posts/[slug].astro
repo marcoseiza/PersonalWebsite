@@ -7,6 +7,10 @@ const post = (await Astro.glob("../../posts/*.md")).find(
 );
 ---
 
-<Post title={post?.frontmatter.title} date={post?.frontmatter.date}>
+<Post
+  title={post?.frontmatter.title}
+  date={post?.frontmatter.date}
+  headings={post?.getHeadings() || []}
+>
   {post && <post.Content />}
 </Post>

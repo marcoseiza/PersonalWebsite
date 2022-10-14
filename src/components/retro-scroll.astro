@@ -32,7 +32,7 @@ const { className = "", fullpage = false } = Astro.props as Props;
   }
 
   main.fullpage {
-    height: 100vh;
+    height: calc(100vh - 48px);
     max-height: -moz-available;
     max-height: -webkit-fill-available;
     max-height: fill-available;

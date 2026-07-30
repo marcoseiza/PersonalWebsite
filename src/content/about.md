@@ -1,4 +1,5 @@
-- ![icon](/img/microsoft.svg) SWE @ Microsoft | Microsoft Edge WebEx
+- 📈 Senior Platform Architect EM & Head of Design and Marketing @ Trexquant
+- ![icon](/img/microsoft.svg) Ex-SWE @ Microsoft | Microsoft Web and AI Experiences
 - ![icon](/img/cornell.svg) Cornell University School of Engineering | Class of '23
 - 📚 Bachelor in Information Science, Systems & Technology
 - 🇦🇷 🇺🇸 Bilingual and Bicultural

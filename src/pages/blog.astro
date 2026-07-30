@@ -3,13 +3,13 @@ import BaseLayout from "../layouts/base-layout.astro";
 import Container from "../components/container.astro";
 import Flex from "../components/flex.astro";
 import LoadPosts from "../components/react-components/load-posts";
+import PostCard from "../components/react-components/post-card";
 import WindowTitleBar from "../components/window-title-bar.astro";
 import { Article, House } from "phosphor-react";
 import Button from "../components/button.astro";
 import RetroScroll from "../components/retro-scroll.astro";
 import WarningBanner from "../components/warning-banner.astro";
 import Card from "../components/card.astro";
-import type { Metadata } from "astro/dist/runtime/server";
 ---
 
 <BaseLayout title="👨‍💻 My Blog | Marcos Eizayaga">
@@ -22,7 +22,7 @@ import type { Metadata } from "astro/dist/runtime/server";
     </Button>
   </WindowTitleBar>
   <RetroScroll className="scroll" fullpage>
-    <Container padding={2} maxWidth={900}>
+    <Container padding={2} maxWidth={1000}>
       <Flex direction="column" align="stretch" justify="flex-start" gap={10}>
         <WarningBanner id={"warning"}>
           Blog does not currently work on Safari. 🥲<br />
@@ -36,6 +36,38 @@ import type { Metadata } from "astro/dist/runtime/server";
             }
           }, 3000);
         </script>
+        <ul class="react-article-list">
+          {
+            [
+              {
+                title: "AI is the new UI",
+                subtitle:
+                  'Or "How I learned to stop worrying and love the bomb (OpenAPIs)"',
+              },
+              {
+                title:
+                  "Building and Adoption of RAG in the financial space, is it still necessary?",
+                subtitle: "The blackbox that can muddy the waters.",
+              },
+              {
+                title: "How to manage feedback loops in internal-tooling?",
+                subtitle:
+                  "When to move fast and break things and when to slow down and harden things.",
+              },
+              {
+                title:
+                  "Architecting code to match an organization, lowering the friction, the good and the gnarly.",
+              },
+            ].map(({ title, subtitle }) => (
+              <PostCard
+                comingSoon
+                showPreview={false}
+                title={title}
+                subtitle={subtitle}
+              />
+            ))
+          }
+        </ul>
         <LoadPosts client:idle>
           <Card slot="noPosts">
             <h3>No posts right now, come back later :(</h3>
@@ -52,7 +84,7 @@ import type { Metadata } from "astro/dist/runtime/server";
     background-color: var(--color-background);
   }
 
-  ::global(#warning) {
+  :global(#warning) {
     display: none;
   }
 </style>

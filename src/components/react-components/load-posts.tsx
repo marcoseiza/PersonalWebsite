@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import {
   fetchPostImportModules,
   updatePostUrl,
-  Module,
   isValidPost,
   sortPosts,
 } from "../../helpers/";
+import type { Module } from "../../helpers/";
 import type { MDInstance } from "../../helpers/types";
 import PlaceHolderPosts from "./placeholder-posts";
 import PostCard from "./post-card";

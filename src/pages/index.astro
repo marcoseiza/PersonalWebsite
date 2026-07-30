@@ -10,7 +10,9 @@ import WindowTitleBar from "../components/window-title-bar.astro";
 import MdStyling from "../components/md-styling.astro";
 import RetroScroll from "../components/retro-scroll.astro";
 
-const about = (await Astro.glob("../content/about.md"))[0];
+const about = Object.values(
+  import.meta.glob("../content/about.md", { eager: true })
+)[0] as any;
 ---
 
 <BaseLayout title="👋 Hi | Marcos Eizayaga">

@@ -2,9 +2,9 @@
 import Post from "../../layouts/post-layout.astro";
 const { slug } = Astro.params;
 
-const post = (await Astro.glob("../../posts/*.md")).find(
-  (p) => p.frontmatter.slug === slug
-);
+const post = (
+  Object.values(import.meta.glob("../../posts/*.md", { eager: true })) as any[]
+).find((p) => p.frontmatter.slug === slug);
 ---
 
 <Post

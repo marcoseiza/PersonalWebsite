@@ -1,9 +1,9 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 
-import netlify from "@astrojs/netlify/functions";
+import netlify from "@astrojs/netlify";
 
-import GDScriptGrammar from "./src/assets/GDScript.tmLanguage.json"
+import GDScriptGrammar from "./src/assets/GDScript.tmLanguage.json" with { type: "json" };
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,12 +14,12 @@ export default defineConfig({
     shikiConfig: {
       langs: [
         {
-          id: "GDScript",
+          ...GDScriptGrammar,
+          name: "GDScript",
           scopeName: "source.gdscript",
           aliases: ["gd", "gdscript"],
-          grammar: GDScriptGrammar
-        }
-      ]
-    }
-  }
+        },
+      ],
+    },
+  },
 });

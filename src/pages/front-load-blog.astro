@@ -8,7 +8,9 @@ import Button from "../components/button.astro";
 import RetroScroll from "../components/retro-scroll.astro";
 import PostCard from "../components/react-components/post-card";
 
-const posts = await Astro.glob("./posts/*.md");
+const posts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true })
+) as any[];
 ---
 
 <BaseLayout title="👨‍💻 My Blog | Marcos Eizayaga">

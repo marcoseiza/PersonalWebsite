@@ -7,7 +7,7 @@ excerpt: "."
 
 # Starting Out With Rust and Svelte Using Tauri
 
-[![Tauri Banner](https://tauri.app/img/social.png)](https://tauri.app/ "banner")
+[![Tauri Banner](/img/tauri-banner.png)](https://tauri.app/ "banner")
 
 I've been wanting to check out
 [![icon](https://www.rust-lang.org/static/images/safari-pinned-tab.svg) Rust](https://www.rust-lang.org/ "icon-text-link") 
@@ -25,7 +25,7 @@ pattern matching, great error handling, and the best part, clear concepts of own
 
 
 To learn Rust I decided to use 
-[![icon](https://tauri.app/meta/favicon-96x96.png) Tauri](https://tauri.app/ "icon-text-link")
+[![icon](https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tauri.app/&size=96) Tauri](https://tauri.app/ "icon-text-link")
 , a framework to build desktop applications with a Rust backend and regular Javascript frontend.
 It's like Electron, but not Chromium :). Having a Javascript frontend, also allowed me to
 start out with Svelte. I built a simple TodoList app, which you can download below.

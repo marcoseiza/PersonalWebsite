@@ -73,6 +73,21 @@ a.react-card:hover {
   min-width: 10em;
 }
 
+.react-article-subtitle {
+  font-style: italic;
+  margin: 0.5em 0;
+}
+
+.react-card.coming-soon {
+  filter: grayscale(1);
+  opacity: 0.7;
+  cursor: default;
+}
+
+.react-card.coming-soon .react-article-date {
+  font-weight: bold;
+}
+
 @keyframes Pulsate {
   from { opacity: 1; }
   50% { opacity: 0.4; }

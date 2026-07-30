@@ -5,10 +5,10 @@ date: "26 Sep 2022 5:52 PM"
 excerpt: "I explain the process of making the website."
 ---
 # Making This Website Using Astro
-[![Astro Banner](https://raw.githubusercontent.com/withastro/astro/main/assets/social/banner.svg)](https://astro.build/ "banner")
+[![Astro Banner](/img/astro-banner.png)](https://astro.build/ "banner")
 
 In this post I explain my process of using 
-[![icon](https://raw.githubusercontent.com/withastro/astro/main/assets/brand/file-icon.svg) Astro](https://astro.build/ "icon-text-link") 
+[![icon](https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://astro.build/&size=32) Astro](https://astro.build/ "icon-text-link") 
 to build this website.
 
 The Github Repo: [![icon](https://github.com/fluidicon.png) Personal Website](https://github.com/marcoseiza/PersonalWebsite "icon-text-link")

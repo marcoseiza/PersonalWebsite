@@ -2,6 +2,7 @@
 import Flex from "./flex.astro";
 import Button from "./button.astro";
 import Github from "./custom-icons/github.astro";
+import LinkedIn from "./custom-icons/linkedin.astro";
 import { Article } from "phosphor-react";
 ---
 
@@ -11,5 +12,12 @@ import { Article } from "phosphor-react";
   </Button>
   <Button url="/blog" text="My Blog" forceWidth={160}>
     <Article size={32} weight="bold" />
+  </Button>
+  <Button
+    url="https://www.linkedin.com/in/marcoseizayaga/"
+    text="My LinkedIn"
+    forceWidth={180}
+  >
+    <LinkedIn size={32} />
   </Button>
 </Flex>

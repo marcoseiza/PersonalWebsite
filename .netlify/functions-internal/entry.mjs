@@ -2,11 +2,10 @@ import * as adapter from '@astrojs/netlify/netlify-functions.js';
 import React, { createElement, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/server';
 import { escape } from 'html-escaper';
-/* empty css                        *//* empty css                                                          */import * as $$module1$3 from 'phosphor-react';
-import { ArrowDown, Article, House, ArrowLeft, Circle, Warning } from 'phosphor-react';
-/* empty css                                          *//* empty css                                     *//* empty css                                             *//* empty css                                  */import { jsx, jsxs, Fragment as Fragment$1 } from 'react/jsx-runtime';
-import { Client } from '@notionhq/client';
-/* empty css                       */import 'mime';
+/* empty css                        *//* empty css                                                          */import * as $$module5$1 from 'phosphor-react';
+import { ArrowDown, Article, House, ArrowLeft, Warning } from 'phosphor-react';
+/* empty css                                          *//* empty css                                     *//* empty css                                  */import { jsx, jsxs, Fragment as Fragment$1 } from 'react/jsx-runtime';
+/* empty css                               *//* empty css                       */import 'mime';
 import 'kleur/colors';
 import 'string-width';
 import 'path-browserify';
@@ -1537,10 +1536,10 @@ var server_default = {
   renderToStaticMarkup
 };
 
-const $$metadata$h = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/base-layout.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$h = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/base-layout.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$j = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/layouts/base-layout.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$j = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/layouts/base-layout.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$BaseLayout = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$h, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$j, $$props, $$slots);
   Astro2.self = $$BaseLayout;
   const { title } = Astro2.props;
   const description = "Marcos Eizayaga personal website. Check out my blog where I document all the projects I'm doing.";
@@ -1594,21 +1593,21 @@ const $$BaseLayout = createComponent(async ($$result, $$props, $$slots) => {
   </body></html>`;
 });
 
-const $$file$h = "/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/base-layout.astro";
-const $$url$h = undefined;
+const $$file$j = "/Users/marcoseizayaga/repos/PersonalWebsite/src/layouts/base-layout.astro";
+const $$url$j = undefined;
 
 const $$module1$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$h,
+	$$metadata: $$metadata$j,
 	default: $$BaseLayout,
-	file: $$file$h,
-	url: $$url$h
+	file: $$file$j,
+	url: $$url$j
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$g = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/section.astro", { modules: [{ module: $$module1$3, specifier: "phosphor-react", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$g = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/section.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$i = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/section.astro", { modules: [{ module: $$module5$1, specifier: "phosphor-react", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$i = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/section.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Section = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$i, $$props, $$slots);
   Astro2.self = $$Section;
   const {
     className = "",
@@ -1636,21 +1635,21 @@ const $$Section = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$g = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/section.astro";
-const $$url$g = undefined;
+const $$file$i = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/section.astro";
+const $$url$i = undefined;
 
 const $$module2$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$g,
+	$$metadata: $$metadata$i,
 	default: $$Section,
-	file: $$file$g,
-	url: $$url$g
+	file: $$file$i,
+	url: $$url$i
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$f = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/card.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$f = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/card.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$h = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/card.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$h = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/card.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Card = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$h, $$props, $$slots);
   Astro2.self = $$Card;
   const { className = "", id, url, padding = "1em" } = Astro2.props;
   const Wrapper = url ? "a" : "div";
@@ -1671,21 +1670,21 @@ const $$Card = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$f = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/card.astro";
-const $$url$f = undefined;
+const $$file$h = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/card.astro";
+const $$url$h = undefined;
 
-const $$module11 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module10 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$f,
+	$$metadata: $$metadata$h,
 	default: $$Card,
-	file: $$file$f,
-	url: $$url$f
+	file: $$file$h,
+	url: $$url$h
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$e = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/container.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$e = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/container.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$g = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/container.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$g = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/container.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Container = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
   Astro2.self = $$Container;
   const { padding, id, maxWidth, className } = Astro2.props;
   const $$definedVars = defineStyleVars([{
@@ -1709,21 +1708,21 @@ const $$Container = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$e = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/container.astro";
-const $$url$e = undefined;
+const $$file$g = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/container.astro";
+const $$url$g = undefined;
 
 const $$module2$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$e,
+	$$metadata: $$metadata$g,
 	default: $$Container,
-	file: $$file$e,
-	url: $$url$e
+	file: $$file$g,
+	url: $$url$g
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$d = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/separator.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$d = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/separator.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$f = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/separator.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$f = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/separator.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Separator = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$Separator;
   const {
     parentPadding = "",
@@ -1758,21 +1757,21 @@ const $$Separator = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$d = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/separator.astro";
-const $$url$d = undefined;
+const $$file$f = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/separator.astro";
+const $$url$f = undefined;
 
 const $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$d,
+	$$metadata: $$metadata$f,
 	default: $$Separator,
-	file: $$file$d,
-	url: $$url$d
+	file: $$file$f,
+	url: $$url$f
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$c = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/flex.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$c = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/flex.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$e = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/flex.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$e = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/flex.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Flex = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$Flex;
   const {
     direction = "row",
@@ -1809,21 +1808,21 @@ const $$Flex = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$c = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/flex.astro";
-const $$url$c = undefined;
+const $$file$e = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/flex.astro";
+const $$url$e = undefined;
 
 const $$module3$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$c,
+	$$metadata: $$metadata$e,
 	default: $$Flex,
-	file: $$file$c,
-	url: $$url$c
+	file: $$file$e,
+	url: $$url$e
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$b = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/button.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$b = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/button.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$d = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/button.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$d = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/button.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Button = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$Button;
   const {
     url,
@@ -1855,21 +1854,21 @@ const $$Button = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$b = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/button.astro";
-const $$url$b = undefined;
+const $$file$d = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/button.astro";
+const $$url$d = undefined;
 
-const $$module8$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module7$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$b,
+	$$metadata: $$metadata$d,
 	default: $$Button,
-	file: $$file$b,
-	url: $$url$b
+	file: $$file$d,
+	url: $$url$d
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$a = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/custom-icons/github.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$a = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/custom-icons/github.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$c = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/custom-icons/github.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$c = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/custom-icons/github.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Github = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Github;
   const { size } = Astro2.props;
   const $$definedVars = defineStyleVars([{ size: `${size}px` }]);
@@ -1884,40 +1883,69 @@ const $$Github = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$a = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/custom-icons/github.astro";
-const $$url$a = undefined;
+const $$file$c = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/custom-icons/github.astro";
+const $$url$c = undefined;
 
 const $$module3$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$a,
+	$$metadata: $$metadata$c,
 	default: $$Github,
+	file: $$file$c,
+	url: $$url$c
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$metadata$b = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/custom-icons/linkedin.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$b = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/custom-icons/linkedin.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
+const $$Linkedin = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  Astro2.self = $$Linkedin;
+  const { size } = Astro2.props;
+  const $$definedVars = defineStyleVars([{ size: `${size}px` }]);
+  const STYLES = [
+    { props: { "define:vars": { size: `${size}px` }, "data-astro-id": "RVCEOYOF" }, children: `.linkedin-icn:where(.astro-RVCEOYOF){width:var(--size);height:var(--size)}` }
+  ];
+  for (const STYLE of STYLES)
+    $$result.styles.add(STYLE);
+  return renderTemplate`${maybeRenderHead($$result)}<svg class="linkedin-icn astro-RVCEOYOF" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkedInIcon"${addAttribute($$definedVars, "style")}><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" class="astro-RVCEOYOF"></path>
+</svg>
+
+`;
+});
+
+const $$file$b = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/custom-icons/linkedin.astro";
+const $$url$b = undefined;
+
+const $$module4$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	$$metadata: $$metadata$b,
+	default: $$Linkedin,
+	file: $$file$b,
+	url: $$url$b
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$metadata$a = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/action-buttons.astro", { modules: [{ module: $$module3$2, specifier: "./flex.astro", assert: {} }, { module: $$module7$1, specifier: "./button.astro", assert: {} }, { module: $$module3$1, specifier: "./custom-icons/github.astro", assert: {} }, { module: $$module4$1, specifier: "./custom-icons/linkedin.astro", assert: {} }, { module: $$module5$1, specifier: "phosphor-react", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$a = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/action-buttons.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
+const $$ActionButtons = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  Astro2.self = $$ActionButtons;
+  return renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "row", "align": "center", "justify": "center", "gap": 10 }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "url": "https://github.com/marcoseiza", "text": "My Work", "forceWidth": 160 }, { "default": () => renderTemplate`${renderComponent($$result, "Github", $$Github, { "size": 32 })}` })}${renderComponent($$result, "Button", $$Button, { "url": "/blog", "text": "My Blog", "forceWidth": 160 }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 32, "weight": "bold" })}` })}${renderComponent($$result, "Button", $$Button, { "url": "https://www.linkedin.com/in/marcoseizayaga/", "text": "My LinkedIn", "forceWidth": 160 }, { "default": () => renderTemplate`${renderComponent($$result, "LinkedIn", $$Linkedin, { "size": 32 })}` })}` })}`;
+});
+
+const $$file$a = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/action-buttons.astro";
+const $$url$a = undefined;
+
+const $$module7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	$$metadata: $$metadata$a,
+	default: $$ActionButtons,
 	file: $$file$a,
 	url: $$url$a
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$9 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/action-buttons.astro", { modules: [{ module: $$module3$2, specifier: "./flex.astro", assert: {} }, { module: $$module8$1, specifier: "./button.astro", assert: {} }, { module: $$module3$1, specifier: "./custom-icons/github.astro", assert: {} }, { module: $$module1$3, specifier: "phosphor-react", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$9 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/action-buttons.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
-const $$ActionButtons = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
-  Astro2.self = $$ActionButtons;
-  return renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "row", "align": "center", "justify": "center", "gap": 10 }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "url": "https://github.com/marcoseiza", "text": "My Work", "forceWidth": 160 }, { "default": () => renderTemplate`${renderComponent($$result, "Github", $$Github, { "size": 32 })}` })}${renderComponent($$result, "Button", $$Button, { "url": "/blog", "text": "My Blog", "forceWidth": 160 }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 32, "weight": "bold" })}` })}` })}`;
-});
-
-const $$file$9 = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/action-buttons.astro";
-const $$url$9 = undefined;
-
-const $$module7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-	__proto__: null,
-	$$metadata: $$metadata$9,
-	default: $$ActionButtons,
-	file: $$file$9,
-	url: $$url$9
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const $$metadata$8 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/window-title-bar.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$8 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/window-title-bar.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$9 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/window-title-bar.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$9 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/window-title-bar.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$WindowTitleBar = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$WindowTitleBar;
   const { sticky = false } = Astro2.props;
   const STYLES = [];
@@ -1937,15 +1965,15 @@ const $$WindowTitleBar = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$8 = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/window-title-bar.astro";
-const $$url$8 = undefined;
+const $$file$9 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/window-title-bar.astro";
+const $$url$9 = undefined;
 
-const $$module6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$8,
+	$$metadata: $$metadata$9,
 	default: $$WindowTitleBar,
-	file: $$file$8,
-	url: $$url$8
+	file: $$file$9,
+	url: $$url$9
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const bigChecker = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEYSURBVHgB7dghDoBADADBHv//MwQPKHJrZiTUbRpI18yc82y9PDf/4/wxpASICRATICZAbH288/eyYd4GxASICRATICZA7P5i+xsJ521ATICYADEBYgLE3ILieRsQEyAmQEyAmAAxt6B43gbEBIgJEBMgJkDMLSietwExAWICxASICRBzC4rnbUBMgJgAMQFiAsTcguJ5GxATICZATICYADG3oHjeBsQEiAkQEyAmQMwtKJ63ATEBYgLEBIgJEHMLiudtQEyAmAAxAWICxNyC4nkbEBMgJkBMgJgAMbegeN4GxASICRATICZAzC0onrcBMQFiAsQEiAkQcwuK521ATICYADEBYgLE3ILieRsQEyAmQEyAmACxC/TxgKm0tngOAAAAAElFTkSuQmCC";
@@ -1955,31 +1983,31 @@ const $$module1$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 	default: bigChecker
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$7 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/md-styling.astro", { modules: [{ module: $$module1$1, specifier: "../../public/img/big-checker.png", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$7 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/md-styling.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$8 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/md-styling.astro", { modules: [{ module: $$module1$1, specifier: "../../public/img/big-checker.png", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$8 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/md-styling.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$MdStyling = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$MdStyling;
   return renderTemplate`${maybeRenderHead($$result)}<div class="md">
   ${renderSlot($$result, $$slots["default"])}
 </div>`;
 });
 
-const $$file$7 = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/md-styling.astro";
-const $$url$7 = undefined;
+const $$file$8 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/md-styling.astro";
+const $$url$8 = undefined;
 
 const $$module3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$7,
+	$$metadata: $$metadata$8,
 	default: $$MdStyling,
-	file: $$file$7,
-	url: $$url$7
+	file: $$file$8,
+	url: $$url$8
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$6 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/retro-scroll.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$6 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/retro-scroll.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$7 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/retro-scroll.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$7 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/retro-scroll.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$RetroScroll = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$RetroScroll;
   const { className = "", fullpage = false } = Astro2.props;
   const STYLES = [];
@@ -1992,23 +2020,23 @@ const $$RetroScroll = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$6 = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/retro-scroll.astro";
-const $$url$6 = undefined;
+const $$file$7 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/retro-scroll.astro";
+const $$url$7 = undefined;
 
-const $$module9 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module8$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$6,
+	$$metadata: $$metadata$7,
 	default: $$RetroScroll,
-	file: $$file$6,
-	url: $$url$6
+	file: $$file$7,
+	url: $$url$7
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$5 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/index.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2$2, specifier: "../components/section.astro", assert: {} }, { module: $$module11, specifier: "../components/card.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module2, specifier: "../components/separator.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module7, specifier: "../components/action-buttons.astro", assert: {} }, { module: $$module6, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module3, specifier: "../components/md-styling.astro", assert: {} }, { module: $$module9, specifier: "../components/retro-scroll.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$5 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/index.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$6 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/index.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2$2, specifier: "../components/section.astro", assert: {} }, { module: $$module10, specifier: "../components/card.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module2, specifier: "../components/separator.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module7, specifier: "../components/action-buttons.astro", assert: {} }, { module: $$module5, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module3, specifier: "../components/md-styling.astro", assert: {} }, { module: $$module8$1, specifier: "../components/retro-scroll.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$6 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/index.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Index;
-  const about = (await Astro2.glob(/* #__PURE__ */ Object.assign({"../content/about.md": () => import('./chunks/about.2b515596.mjs')}), () => "../content/about.md"))[0];
+  const about = (await Astro2.glob(/* #__PURE__ */ Object.assign({"../content/about.md": () => import('./chunks/about.8c1d8ee9.mjs')}), () => "../content/about.md"))[0];
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
@@ -2020,15 +2048,15 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$5 = "/Users/marcoseiza/Repos/PersonalWebSite/src/pages/index.astro";
-const $$url$5 = "";
+const $$file$6 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/index.astro";
+const $$url$6 = "";
 
 const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$5,
+	$$metadata: $$metadata$6,
 	default: $$Index,
-	file: $$file$5,
-	url: $$url$5
+	file: $$file$6,
+	url: $$url$6
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function Skeleton() {
@@ -2089,10 +2117,10 @@ const $$module8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	default: Post
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$4 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/front-load-blog.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module6, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module1$3, specifier: "phosphor-react", assert: {} }, { module: $$module8$1, specifier: "../components/button.astro", assert: {} }, { module: $$module9, specifier: "../components/retro-scroll.astro", assert: {} }, { module: $$module8, specifier: "../components/react-components/post-card", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$4 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/front-load-blog.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$5 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/front-load-blog.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module5, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module5$1, specifier: "phosphor-react", assert: {} }, { module: $$module7$1, specifier: "../components/button.astro", assert: {} }, { module: $$module8$1, specifier: "../components/retro-scroll.astro", assert: {} }, { module: $$module8, specifier: "../components/react-components/post-card", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$5 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/front-load-blog.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$FrontLoadBlog = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$FrontLoadBlog;
   const posts = await Astro2.glob(/* #__PURE__ */ Object.assign({}), () => "./posts/*.md");
   const STYLES = [];
@@ -2105,71 +2133,68 @@ const $$FrontLoadBlog = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$4 = "/Users/marcoseiza/Repos/PersonalWebSite/src/pages/front-load-blog.astro";
-const $$url$4 = "/front-load-blog";
+const $$file$5 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/front-load-blog.astro";
+const $$url$5 = "/front-load-blog";
 
 const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$4,
+	$$metadata: $$metadata$5,
 	default: $$FrontLoadBlog,
+	file: $$file$5,
+	url: $$url$5
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$metadata$4 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/table-of-contents.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$4 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/table-of-contents.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
+const $$TableOfContents = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
+  Astro2.self = $$TableOfContents;
+  const { headings } = Astro2.props;
+  const STYLES = [];
+  for (const STYLE of STYLES)
+    $$result.styles.add(STYLE);
+  return renderTemplate`${maybeRenderHead($$result)}<ol class="table-of-contents astro-X6XVUVII">
+  ${headings.map((h) => {
+    return renderTemplate`<li${addAttribute([["table-of-contents-item", `depth-${h.depth}`], "astro-X6XVUVII"], "class:list")}>
+          ${new Array(h.depth - 1).fill(void 0).map(() => {
+      return renderTemplate`<span class="astro-X6XVUVII">&emsp;</span>`;
+    })}
+          <a${addAttribute(`#${h.slug}`, "href")} class="astro-X6XVUVII">
+            <p class="astro-X6XVUVII">
+              ${`#h${h.depth}`} ${h.text}
+            </p>
+          </a>
+        </li>`;
+  })}
+</ol>
+
+`;
+});
+
+const $$file$4 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/table-of-contents.astro";
+const $$url$4 = undefined;
+
+const $$module11 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	$$metadata: $$metadata$4,
+	default: $$TableOfContents,
 	file: $$file$4,
 	url: $$url$4
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const fetchPostImportModules = () => {
-  return Object.values(/* #__PURE__ */ Object.assign({"../posts/making-the-website.md": () => import('./chunks/making-the-website.ef0c3096.mjs'),"../posts/test.md": () => import('./chunks/test.a516b2b9.mjs')}));
-};
-const updatePostUrl = (post) => ({
-  ...post,
-  url: `/posts/${post.frontmatter.slug}`
-});
-const isValidPost = (post) => !post.frontmatter.draft && !post.frontmatter.archive;
-const postComparator = (a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime();
-const sortPosts = (posts) => posts.sort(postComparator);
-const DefaultTasks = () => ({
-  ToDo: [],
-  Doing: [],
-  Done: []
-});
-
-async function post({ request }) {
-  const data = await request.json();
-  if (data.database_id === void 0) {
-    return new Response(JSON.stringify({
-      statusText: '"database_id" not defined in request body'
-    }), { status: 400 });
-  }
-  const notion = new Client({ auth: process.env.NOTION_SECRET });
-  const tasks = DefaultTasks();
-  try {
-    const tasksDB = await notion.databases.query({
-      database_id: data.database_id
-    });
-    tasksDB.results.slice(0, -1).map((v) => {
-      tasks[v.properties.Status.select.name].push(
-        v.properties.Name.title[0].text.content
-      );
-    });
-  } catch (e) {
-    return new Response(JSON.stringify({
-      statusText: "Database not found"
-    }), { status: 400 });
-  }
-  return new Response(JSON.stringify({ tasks }), { status: 200 });
-}
-
-const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-	__proto__: null,
-	post
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const $$metadata$3 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/post-layout.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2, specifier: "../components/separator.astro", assert: {} }, { module: $$module3, specifier: "../components/md-styling.astro", assert: {} }, { module: $$module9, specifier: "../components/retro-scroll.astro", assert: {} }, { module: $$module8$1, specifier: "../components/button.astro", assert: {} }, { module: $$module1$3, specifier: "phosphor-react", assert: {} }, { module: $$module6, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module11, specifier: "../components/card.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$3 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/post-layout.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$3 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/layouts/post-layout.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2, specifier: "../components/separator.astro", assert: {} }, { module: $$module3, specifier: "../components/md-styling.astro", assert: {} }, { module: $$module8$1, specifier: "../components/retro-scroll.astro", assert: {} }, { module: $$module7$1, specifier: "../components/button.astro", assert: {} }, { module: $$module5$1, specifier: "phosphor-react", assert: {} }, { module: $$module5, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module10, specifier: "../components/card.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module11, specifier: "../components/table-of-contents.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$3 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/layouts/post-layout.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$PostLayout = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$PostLayout;
-  const { title, date } = Astro2.props;
-  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": title }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "sticky": true }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "HOME", "url": "/", "size": "small", "elevation": 1 }, { "default": () => renderTemplate`${renderComponent($$result, "House", House, { "size": 20, "weight": "fill" })}` })}${renderComponent($$result, "Button", $$Button, { "text": "BLOG", "url": "/blog", "size": "small", "elevation": 1 }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 20, "weight": "fill" })}` })}` })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll", "fullpage": true }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 2, "maxWidth": 900 }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "BACK", "className": "back-button", "url": "/blog" }, { "default": () => renderTemplate`${renderComponent($$result, "ArrowLeft", ArrowLeft, { "size": 25, "weight": "bold" })}` })}${renderComponent($$result, "Separator", $$Separator, {})}${renderComponent($$result, "Card", $$Card, { "padding": "1.5em  2em" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<h4 class="fancy-text">${title}</h4><h4>${date}</h4>${renderComponent($$result, "Separator", $$Separator, { "showLine": true, "lineHeight": 3.5, "parentPadding": "2em" })}${renderComponent($$result, "MdStyling", $$MdStyling, {}, { "default": () => renderTemplate`${renderSlot($$result, $$slots["default"])}` })}` })}${renderComponent($$result, "Separator", $$Separator, { "marginBottom": "2em" })}${renderComponent($$result, "Button", $$Button, { "text": "BACK", "className": "back-button", "url": "/blog" }, { "default": () => renderTemplate`${renderComponent($$result, "ArrowLeft", ArrowLeft, { "size": 25, "weight": "bold" })}` })}` })}` })}` })}
+  const { title, date, headings } = Astro2.props;
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": title }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "sticky": true }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "HOME", "url": "/", "size": "small", "elevation": 1 }, { "default": () => renderTemplate`${renderComponent($$result, "House", House, { "size": 20, "weight": "fill" })}` })}${renderComponent($$result, "Button", $$Button, { "text": "BLOG", "url": "/blog", "size": "small", "elevation": 1 }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 20, "weight": "fill" })}` })}` })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll", "fullpage": true }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 2, "maxWidth": 900 }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "BACK", "className": "back-button", "url": "/blog" }, { "default": () => renderTemplate`${renderComponent($$result, "ArrowLeft", ArrowLeft, { "size": 25, "weight": "bold" })}` })}${renderComponent($$result, "Separator", $$Separator, {})}${renderComponent($$result, "Card", $$Card, { "padding": "1.5em  2em" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "align": "center" }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 32, "weight": "bold", "color": "var(--color-card-text)", "style": {
+    marginRight: "1em",
+    flexShrink: 0
+  } })}${maybeRenderHead($$result)}<h3>${date}</h3>` })}<details class="table-of-contents">
+            <summary><b>Table Of Contents</b></summary>
+            ${renderComponent($$result, "TableOfContents", $$TableOfContents, { "headings": headings })}
+          </details>` })}${renderComponent($$result, "Separator", $$Separator, { "showLine": true, "lineHeight": 3.5, "parentPadding": "2em" })}${renderComponent($$result, "MdStyling", $$MdStyling, {}, { "default": () => renderTemplate`${renderSlot($$result, $$slots["default"])}` })}` })}${renderComponent($$result, "Separator", $$Separator, { "marginBottom": "2em" })}${renderComponent($$result, "Button", $$Button, { "text": "BACK", "className": "back-button", "url": "/blog" }, { "default": () => renderTemplate`${renderComponent($$result, "ArrowLeft", ArrowLeft, { "size": 25, "weight": "bold" })}` })}` })}` })}` })}
 
 <style>
   body {
@@ -2180,10 +2205,15 @@ const $$PostLayout = createComponent(async ($$result, $$props, $$slots) => {
   .back-button {
     display: inline-block;
   }
+
+  .table-of-contents {
+    cursor: pointer;
+    margin-left: 0.2em;
+  }
 </style>`;
 });
 
-const $$file$3 = "/Users/marcoseiza/Repos/PersonalWebSite/src/layouts/post-layout.astro";
+const $$file$3 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/layouts/post-layout.astro";
 const $$url$3 = undefined;
 
 const $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2194,22 +2224,22 @@ const $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$3
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$2 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/posts/[slug].astro", { modules: [{ module: $$module1, specifier: "../../layouts/post-layout.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$2 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/posts/[slug].astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$2 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/posts/[slug].astro", { modules: [{ module: $$module1, specifier: "../../layouts/post-layout.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$2 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/posts/[slug].astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$slug = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$slug;
   const { slug } = Astro2.params;
-  const post = (await Astro2.glob(/* #__PURE__ */ Object.assign({"../../posts/making-the-website.md": () => import('./chunks/making-the-website.ef0c3096.mjs'),"../../posts/test.md": () => import('./chunks/test.a516b2b9.mjs')}), () => "../../posts/*.md")).find(
+  const post = (await Astro2.glob(/* #__PURE__ */ Object.assign({"../../posts/making-the-website.md": () => import('./chunks/making-the-website.ae238e0a.mjs'),"../../posts/test.md": () => import('./chunks/test.530f862b.mjs'),"../../posts/testing-out-godot.md": () => import('./chunks/testing-out-godot.f4c36b69.mjs'),"../../posts/using-rust-with-tauri.md": () => import('./chunks/using-rust-with-tauri.7977f71a.mjs')}), () => "../../posts/*.md")).find(
     (p) => p.frontmatter.slug === slug
   );
-  return renderTemplate`${renderComponent($$result, "Post", $$PostLayout, { "title": post?.frontmatter.title, "date": post?.frontmatter.date }, { "default": () => renderTemplate`${post && renderTemplate`${renderComponent($$result, "post.Content", post.Content, {})}`}` })}`;
+  return renderTemplate`${renderComponent($$result, "Post", $$PostLayout, { "title": post?.frontmatter.title, "date": post?.frontmatter.date, "headings": post?.getHeadings() || [] }, { "default": () => renderTemplate`${post && renderTemplate`${renderComponent($$result, "post.Content", post.Content, {})}`}` })}`;
 });
 
-const $$file$2 = "/Users/marcoseiza/Repos/PersonalWebSite/src/pages/posts/[slug].astro";
+const $$file$2 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/posts/[slug].astro";
 const $$url$2 = "/posts/[slug]";
 
-const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	$$metadata: $$metadata$2,
 	default: $$slug,
@@ -2217,9 +2247,28 @@ const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$2
 }, Symbol.toStringTag, { value: 'Module' }));
 
+const fetchPostImportModules = () => {
+  return Object.values(
+    /* #__PURE__ */ Object.assign({"../posts/making-the-website.md": () => import('./chunks/making-the-website.ae238e0a.mjs'),"../posts/test.md": () => import('./chunks/test.530f862b.mjs'),"../posts/testing-out-godot.md": () => import('./chunks/testing-out-godot.f4c36b69.mjs'),"../posts/using-rust-with-tauri.md": () => import('./chunks/using-rust-with-tauri.7977f71a.mjs')})
+  );
+};
+const updatePostUrl = (post) => ({
+  ...post,
+  url: `/posts/${post.frontmatter.slug}`
+});
+const isValidPost = (post) => !post.frontmatter.draft && !post.frontmatter.archive;
+const postComparator = (a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime();
+const sortPosts = (posts) => posts.sort(postComparator);
+
 function PlaceHolderPosts() {
   return /* @__PURE__ */ jsxs(Fragment$1, {
-    children: [/* @__PURE__ */ jsx(Post, {}, 0), /* @__PURE__ */ jsx(Post, {}, 1), /* @__PURE__ */ jsx(Post, {}, 2)]
+    children: [/* @__PURE__ */ jsx(Post, {
+      showPreview: false
+    }, 0), /* @__PURE__ */ jsx(Post, {
+      showPreview: false
+    }, 1), /* @__PURE__ */ jsx(Post, {
+      showPreview: false
+    }, 2)]
   });
 }
 __astro_tag_component__(PlaceHolderPosts, "@astrojs/react");
@@ -2265,185 +2314,8 @@ const $$module4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	default: LoadPosts
 }, Symbol.toStringTag, { value: 'Module' }));
 
-function NotionLogo() {
-  return /* @__PURE__ */ jsxs("svg", {
-    width: "32",
-    height: "32",
-    viewBox: "0 0 456 456",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: [/* @__PURE__ */ jsx("g", {
-      filter: "url(#filter0_d_601_3)",
-      children: /* @__PURE__ */ jsx("path", {
-        d: "M12 106.07C12 51.9457 55.8761 8.06964 110 8.06965L295.834 8.06966C321.249 8.06966 345.671 17.9437 363.945 35.608L414.112 84.1017C433.214 102.567 444.001 127.996 444.001 154.563V342C444.001 396.124 400.125 440 346.001 440H160.409C134.645 440 109.918 429.854 91.5784 411.759L41.1694 362.021C22.5061 343.606 12 318.481 12 292.262V106.07Z",
-        fill: "black"
-      })
-    }), /* @__PURE__ */ jsx("rect", {
-      x: "111",
-      y: "106",
-      width: "284",
-      height: "285",
-      rx: "58",
-      fill: "white"
-    }), /* @__PURE__ */ jsx("path", {
-      d: "M192.744 322.859V174.141L313.256 322.859V174.141",
-      stroke: "black",
-      "stroke-width": "51",
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round"
-    }), /* @__PURE__ */ jsx("defs", {
-      children: /* @__PURE__ */ jsxs("filter", {
-        id: "filter0_d_601_3",
-        x: "0",
-        y: "0.0696411",
-        width: "456.001",
-        height: "455.93",
-        filterUnits: "userSpaceOnUse",
-        "color-interpolation-filters": "sRGB",
-        children: [/* @__PURE__ */ jsx("feFlood", {
-          "flood-opacity": "0",
-          result: "BackgroundImageFix"
-        }), /* @__PURE__ */ jsx("feColorMatrix", {
-          in: "SourceAlpha",
-          type: "matrix",
-          values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
-          result: "hardAlpha"
-        }), /* @__PURE__ */ jsx("feOffset", {
-          dy: "4"
-        }), /* @__PURE__ */ jsx("feGaussianBlur", {
-          stdDeviation: "6"
-        }), /* @__PURE__ */ jsx("feComposite", {
-          in2: "hardAlpha",
-          operator: "out"
-        }), /* @__PURE__ */ jsx("feColorMatrix", {
-          type: "matrix",
-          values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.66 0"
-        }), /* @__PURE__ */ jsx("feBlend", {
-          mode: "normal",
-          in2: "BackgroundImageFix",
-          result: "effect1_dropShadow_601_3"
-        }), /* @__PURE__ */ jsx("feBlend", {
-          mode: "normal",
-          in: "SourceGraphic",
-          in2: "effect1_dropShadow_601_3",
-          result: "shape"
-        })]
-      })
-    })]
-  });
-}
-__astro_tag_component__(NotionLogo, "@astrojs/react");
-
-function TaskColumn({
-  name,
-  icon,
-  tasks,
-  isDoneLoading
-}) {
-  return /* @__PURE__ */ jsxs("div", {
-    className: "react-task-column react-flex column",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "react-task-column-title",
-      children: [/* @__PURE__ */ jsx("div", {
-        className: "react-task-column-icon",
-        children: icon
-      }), /* @__PURE__ */ jsx("h3", {
-        children: name
-      })]
-    }), /* @__PURE__ */ jsx("ul", {
-      className: !isDoneLoading ? "react-task-column-skeleton" : "",
-      children: isDoneLoading ? tasks.map((task, i) => /* @__PURE__ */ jsx("li", {
-        className: "react-task-column-item",
-        children: /* @__PURE__ */ jsx("h4", {
-          className: "react-task-column-item-desc",
-          children: task
-        })
-      }, i)) : /* @__PURE__ */ jsx(Skeleton, {})
-    })]
-  });
-}
-__astro_tag_component__(TaskColumn, "@astrojs/react");
-
-function TaskCard({
-  tasks,
-  isDoneLoading
-}) {
-  return /* @__PURE__ */ jsxs("div", {
-    className: "react-card",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "react-task-card-title",
-      children: [/* @__PURE__ */ jsx(NotionLogo, {}), /* @__PURE__ */ jsx("h2", {
-        className: "fancy-text react-article-title",
-        children: "My Current Tasks"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
-      className: "react-task-board",
-      children: [/* @__PURE__ */ jsx(TaskColumn, {
-        icon: /* @__PURE__ */ jsx(Circle, {
-          size: 24,
-          weight: "fill",
-          color: "var(--todo-color)"
-        }),
-        name: "ToDo",
-        tasks: tasks.ToDo,
-        isDoneLoading
-      }), /* @__PURE__ */ jsx(TaskColumn, {
-        icon: /* @__PURE__ */ jsx(Circle, {
-          size: 24,
-          weight: "fill",
-          color: "var(--doing-color)"
-        }),
-        name: "Doing",
-        tasks: tasks.Doing,
-        isDoneLoading
-      }), /* @__PURE__ */ jsx(TaskColumn, {
-        icon: /* @__PURE__ */ jsx(Circle, {
-          size: 24,
-          weight: "fill",
-          color: "var(--done-color)"
-        }),
-        name: "Done",
-        tasks: tasks.Done,
-        isDoneLoading
-      })]
-    })]
-  });
-}
-__astro_tag_component__(TaskCard, "@astrojs/react");
-
-function LoadTasks({
-  databaseId
-}) {
-  const [tasks, setTasks] = useState(DefaultTasks);
-  const [isDoneLoading, setDoneLoading] = useState(false);
-  useEffect(() => {
-    const fetchNotionTasks = async () => {
-      const response = await fetch("./notion-tasks", {
-        method: "POST",
-        body: JSON.stringify({
-          database_id: databaseId
-        })
-      });
-      const tasks2 = (await response.json()).tasks;
-      setTasks(tasks2);
-      setDoneLoading(true);
-    };
-    fetchNotionTasks();
-  }, []);
-  return /* @__PURE__ */ jsx(TaskCard, {
-    tasks,
-    isDoneLoading
-  });
-}
-__astro_tag_component__(LoadTasks, "@astrojs/react");
-
-const $$module5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-	__proto__: null,
-	default: LoadTasks
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const $$metadata$1 = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/warning-banner.astro", { modules: [{ module: $$module1$3, specifier: "phosphor-react", assert: {} }, { module: $$module11, specifier: "./card.astro", assert: {} }, { module: $$module3$2, specifier: "./flex.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$1 = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/warning-banner.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$metadata$1 = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/warning-banner.astro", { modules: [{ module: $$module5$1, specifier: "phosphor-react", assert: {} }, { module: $$module10, specifier: "./card.astro", assert: {} }, { module: $$module3$2, specifier: "./flex.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$1 = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/warning-banner.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$WarningBanner = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$WarningBanner;
@@ -2455,10 +2327,10 @@ const $$WarningBanner = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$1 = "/Users/marcoseiza/Repos/PersonalWebSite/src/components/warning-banner.astro";
+const $$file$1 = "/Users/marcoseizayaga/repos/PersonalWebsite/src/components/warning-banner.astro";
 const $$url$1 = undefined;
 
-const $$module10 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module9 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	$$metadata: $$metadata$1,
 	default: $$WarningBanner,
@@ -2466,7 +2338,7 @@ const $$module10 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty
 	url: $$url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/blog.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module4, specifier: "../components/react-components/load-posts", assert: {} }, { module: $$module5, specifier: "../components/react-components/load-tasks", assert: {} }, { module: $$module6, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module1$3, specifier: "phosphor-react", assert: {} }, { module: $$module8$1, specifier: "../components/button.astro", assert: {} }, { module: $$module9, specifier: "../components/retro-scroll.astro", assert: {} }, { module: $$module10, specifier: "../components/warning-banner.astro", assert: {} }, { module: $$module11, specifier: "../components/card.astro", assert: {} }], hydratedComponents: [LoadPosts, LoadTasks], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["idle"]), hoisted: [{ type: "inline", value: `
+const $$metadata = createMetadata("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/blog.astro", { modules: [{ module: $$module1$2, specifier: "../layouts/base-layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/container.astro", assert: {} }, { module: $$module3$2, specifier: "../components/flex.astro", assert: {} }, { module: $$module4, specifier: "../components/react-components/load-posts", assert: {} }, { module: $$module5, specifier: "../components/window-title-bar.astro", assert: {} }, { module: $$module5$1, specifier: "phosphor-react", assert: {} }, { module: $$module7$1, specifier: "../components/button.astro", assert: {} }, { module: $$module8$1, specifier: "../components/retro-scroll.astro", assert: {} }, { module: $$module9, specifier: "../components/warning-banner.astro", assert: {} }, { module: $$module10, specifier: "../components/card.astro", assert: {} }], hydratedComponents: [LoadPosts], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["idle"]), hoisted: [{ type: "inline", value: `
           setTimeout(() => {
             if (!document.getElementById("posts-loaded")) {
               const element = document.getElementById("warning");
@@ -2474,25 +2346,25 @@ const $$metadata = createMetadata("/@fs/Users/marcoseiza/Repos/PersonalWebSite/s
             }
           }, 3000);
         ` }] });
-const $$Astro = createAstro("/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/pages/blog.astro", "", "file:///Users/marcoseiza/Repos/PersonalWebSite/");
+const $$Astro = createAstro("/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/blog.astro", "", "file:///Users/marcoseizayaga/repos/PersonalWebsite/");
 const $$Blog = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Blog;
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "\u{1F468}\u200D\u{1F4BB} My Blog | Marcos Eizayaga", "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "sticky": true, "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "HOME", "url": "/", "size": "small", "elevation": 1, "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`${renderComponent($$result, "House", House, { "size": 20, "weight": "fill", "class": "astro-Z6NJP63O" })}` })}${renderComponent($$result, "Button", $$Button, { "text": "BLOG", "url": "/blog", "size": "small", "elevation": 1, "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 20, "weight": "fill", "class": "astro-Z6NJP63O" })}` })}` })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll astro-Z6NJP63O", "fullpage": true }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 2, "maxWidth": 900, "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "stretch", "justify": "flex-start", "gap": 10, "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`${renderComponent($$result, "WarningBanner", $$WarningBanner, { "id": "warning", "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`
-          Blog does not currently work on Safari. 🥲${maybeRenderHead($$result)}<br class="astro-Z6NJP63O">
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "\u{1F468}\u200D\u{1F4BB} My Blog | Marcos Eizayaga", "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`${renderComponent($$result, "WindowTitleBar", $$WindowTitleBar, { "sticky": true, "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`${renderComponent($$result, "Button", $$Button, { "text": "HOME", "url": "/", "size": "small", "elevation": 1, "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`${renderComponent($$result, "House", House, { "size": 20, "weight": "fill", "class": "astro-7QSXW53E" })}` })}${renderComponent($$result, "Button", $$Button, { "text": "BLOG", "url": "/blog", "size": "small", "elevation": 1, "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`${renderComponent($$result, "Article", Article, { "size": 20, "weight": "fill", "class": "astro-7QSXW53E" })}` })}` })}${renderComponent($$result, "RetroScroll", $$RetroScroll, { "className": "scroll astro-7QSXW53E", "fullpage": true }, { "default": () => renderTemplate`${renderComponent($$result, "Container", $$Container, { "padding": 2, "maxWidth": 900, "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`${renderComponent($$result, "Flex", $$Flex, { "direction": "column", "align": "stretch", "justify": "flex-start", "gap": 10, "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`${renderComponent($$result, "WarningBanner", $$WarningBanner, { "id": "warning", "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`
+          Blog does not currently work on Safari. 🥲${maybeRenderHead($$result)}<br class="astro-7QSXW53E">
           Please use a Chromium or Mozilla based browser instead.
-        ` })}${renderComponent($$result, "LoadTasks", LoadTasks, { "databaseId": process.env.NOTION_TASK_DB_ID, "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-tasks", "client:component-export": "default", "class": "astro-Z6NJP63O" })}${renderComponent($$result, "LoadPosts", LoadPosts, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-posts", "client:component-export": "default", "class": "astro-Z6NJP63O" }, { "noPosts": () => renderTemplate`${renderComponent($$result, "Card", $$Card, { "slot": "noPosts", "class": "astro-Z6NJP63O" }, { "default": () => renderTemplate`<h3 class="astro-Z6NJP63O">No posts right now, come back later :(</h3>` })}` })}` })}` })}` })}` })}
+        ` })}${renderComponent($$result, "LoadPosts", LoadPosts, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/react-components/load-posts", "client:component-export": "default", "class": "astro-7QSXW53E" }, { "noPosts": () => renderTemplate`${renderComponent($$result, "Card", $$Card, { "slot": "noPosts", "class": "astro-7QSXW53E" }, { "default": () => renderTemplate`<h3 class="astro-7QSXW53E">No posts right now, come back later :(</h3>` })}` })}` })}` })}` })}` })}
 
 `;
 });
 
-const $$file = "/Users/marcoseiza/Repos/PersonalWebSite/src/pages/blog.astro";
+const $$file = "/Users/marcoseizayaga/repos/PersonalWebsite/src/pages/blog.astro";
 const $$url = "/blog";
 
-const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	$$metadata,
 	default: $$Blog,
@@ -2500,7 +2372,7 @@ const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const pageMap = new Map([['src/pages/index.astro', _page0],['src/pages/front-load-blog.astro', _page1],['src/pages/notion-tasks.ts', _page2],['src/pages/posts/[slug].astro', _page3],['src/pages/blog.astro', _page4],]);
+const pageMap = new Map([['src/pages/index.astro', _page0],['src/pages/front-load-blog.astro', _page1],['src/pages/posts/[slug].astro', _page2],['src/pages/blog.astro', _page3],]);
 const renderers = [Object.assign({"name":"astro:jsx","serverEntrypoint":"astro/jsx/server.js","jsxImportSource":"astro"}, { ssr: server_default }),Object.assign({"name":"@astrojs/react","clientEntrypoint":"@astrojs/react/client.js","serverEntrypoint":"@astrojs/react/server.js","jsxImportSource":"react"}, { ssr: _renderer1 }),];
 
 if (typeof process !== "undefined") {
@@ -2572,7 +2444,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/index.0e2ae530.css","assets/blog-front-load-blog-index-posts-_slug_.4eec52f4.css","assets/blog-index-posts-_slug_.a9b367f1.css","assets/index-posts-_slug_.b560420c.css","assets/blog-front-load-blog-index.3af70659.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/front-load-blog.51778792.css","assets/blog-front-load-blog-index-posts-_slug_.4eec52f4.css","assets/blog-front-load-blog-index.3af70659.css"],"scripts":[],"routeData":{"route":"/front-load-blog","type":"page","pattern":"^\\/front-load-blog\\/?$","segments":[[{"content":"front-load-blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/front-load-blog.astro","pathname":"/front-load-blog","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/notion-tasks","type":"endpoint","pattern":"^\\/notion-tasks$","segments":[[{"content":"notion-tasks","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/notion-tasks.ts","pathname":"/notion-tasks","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog-index-posts-_slug_.a9b367f1.css","assets/blog-front-load-blog-index-posts-_slug_.4eec52f4.css","assets/index-posts-_slug_.b560420c.css"],"scripts":[],"routeData":{"route":"/posts/[slug]","type":"page","pattern":"^\\/posts\\/([^/]+?)\\/?$","segments":[[{"content":"posts","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/posts/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog.52d9727b.css","assets/blog-front-load-blog-index-posts-_slug_.4eec52f4.css","assets/blog-front-load-blog-index.3af70659.css","assets/blog-index-posts-_slug_.a9b367f1.css"],"scripts":[{"type":"inline","value":"setTimeout(()=>{if(!document.getElementById(\"posts-loaded\")){const e=document.getElementById(\"warning\");e&&(e.style.display=\"block\")}},3e3);\n"}],"routeData":{"route":"/blog","type":"page","pattern":"^\\/blog\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog.astro","pathname":"/blog","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/Users/marcoseiza/Repos/PersonalWebSite/src/content/about.md":"chunks/about.2b515596.mjs","/Users/marcoseiza/Repos/PersonalWebSite/src/posts/making-the-website.md":"chunks/making-the-website.beee6a93.js","/Users/marcoseiza/Repos/PersonalWebSite/src/posts/test.md":"chunks/test.df929283.js","/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-tasks":"load-tasks.9777c824.js","/@fs/Users/marcoseiza/Repos/PersonalWebSite/src/components/react-components/load-posts":"load-posts.deb6cf49.js","@astrojs/react/client.js":"client.5eb191a4.js","/astro/hoisted.js?q=0":"hoisted.dcdac62b.js","astro:scripts/before-hydration.js":""},"assets":["/assets/blog.52d9727b.css","/assets/blog-front-load-blog-index.3af70659.css","/assets/blog-front-load-blog-index-posts-_slug_.4eec52f4.css","/assets/blog-index-posts-_slug_.a9b367f1.css","/assets/front-load-blog.51778792.css","/assets/index.0e2ae530.css","/assets/index-posts-_slug_.b560420c.css","/client.5eb191a4.js","/favicon.png","/favicon.svg","/load-posts.deb6cf49.js","/load-tasks.9777c824.js","/chunks/index.0d08751b.js","/chunks/index.304fda30.js","/chunks/making-the-website.beee6a93.js","/chunks/skeleton.3df5b430.js","/chunks/test.df929283.js","/img/ArrowUDownLeft.svg","/img/big-checker.png","/img/checker.png","/img/cornell.svg","/img/goose.gif","/img/microsoft.svg","/img/noise.png","/img/profile.jpeg","/img/site-preview.png","/seo-assets/preview.png"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/index.8fad3f8e.css","assets/blog-front-load-blog-index-posts-_slug_.a3d5f468.css","assets/blog-index-posts-_slug_.a9b367f1.css","assets/index-posts-_slug_.b560420c.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/front-load-blog.51778792.css","assets/blog-front-load-blog-index-posts-_slug_.a3d5f468.css"],"scripts":[],"routeData":{"route":"/front-load-blog","type":"page","pattern":"^\\/front-load-blog\\/?$","segments":[[{"content":"front-load-blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/front-load-blog.astro","pathname":"/front-load-blog","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog-index-posts-_slug_.a9b367f1.css","assets/blog-front-load-blog-index-posts-_slug_.a3d5f468.css","assets/index-posts-_slug_.b560420c.css","assets/posts-_slug_.3b2bdfdc.css"],"scripts":[],"routeData":{"route":"/posts/[slug]","type":"page","pattern":"^\\/posts\\/([^/]+?)\\/?$","segments":[[{"content":"posts","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/posts/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/blog.52d9727b.css","assets/blog-front-load-blog-index-posts-_slug_.a3d5f468.css","assets/blog-index-posts-_slug_.a9b367f1.css"],"scripts":[{"type":"inline","value":"setTimeout(()=>{if(!document.getElementById(\"posts-loaded\")){const e=document.getElementById(\"warning\");e&&(e.style.display=\"block\")}},3e3);\n"}],"routeData":{"route":"/blog","type":"page","pattern":"^\\/blog\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog.astro","pathname":"/blog","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[{"id":"GDScript","scopeName":"source.gdscript","aliases":["gd","gdscript"],"grammar":{"fileTypes":["gd"],"scopeName":"source.gdscript","name":"GDScript","patterns":[{"include":"#nodepath_object"},{"include":"#nodepath_function"},{"include":"#base_expression"},{"include":"#logic_op"},{"include":"#in_keyword"},{"include":"#getter_setter_godot4"},{"include":"#compare_op"},{"include":"#arithmetic_op"},{"include":"#assignment_op"},{"include":"#lambda_declaration"},{"include":"#control_flow"},{"include":"#annotations"},{"include":"#keywords"},{"include":"#self"},{"include":"#const_def"},{"include":"#class_def"},{"include":"#var_def"},{"include":"#type_hint"},{"include":"#class_name"},{"include":"#builtin_func"},{"include":"#node_path"},{"include":"#builtin_get_node_shorthand"},{"include":"#builtin_classes"},{"include":"#const_vars"},{"include":"#pascal_case_class"},{"include":"#class_new"},{"include":"#class_is"},{"include":"#class_enum"},{"include":"#signal-declaration-bare"},{"include":"#signal-declaration"},{"include":"#function-declaration"},{"include":"#function_keyword"},{"include":"#any-method"},{"include":"#any-property"},{"include":"#extends"}],"repository":{"comment":{"captures":{"1":{"name":"punctuation.definition.comment.number-sign.gdscript"}},"match":"(#).*$\\n?","name":"comment.line.number-sign.gdscript"},"strings":{"patterns":[{"begin":"(?:(?<=get_node|has_node|find_node|get_node_or_null|NodePath)\\s*\\(\\s*)","end":"(?:\\s*\\))","patterns":[{"begin":"[\\\"\\']","end":"[\\\"\\']","name":"constant.character.escape"},{"include":"#base_expression"}]},{"name":"invalid.illegal.escape.gdscript","begin":"'''","end":"'''"},{"begin":"\"","end":"\"","patterns":[{"name":"constant.character.escape.untitled","match":"\\\\."}],"name":"string.quoted.double.gdscript"},{"begin":"'","end":"'","patterns":[{"name":"constant.character.escape.untitled","match":"\\\\."}],"name":"string.quoted.single.gdscript"},{"begin":"@\"","end":"\"","patterns":[{"name":"constant.character.escape.untitled","match":"\\."}],"name":"string.nodepath.gdscript"}]},"nodepath_object":{"name":"meta.literal.nodepath.gdscript","begin":"(NodePath)\\s*(?:\\()","beginCaptures":{"1":{"name":"support.class.library.gdscript"}},"end":"(?:\\))","patterns":[{"begin":"[\\\"\\']","end":"[\\\"\\']","name":"constant.character.escape","patterns":[{"match":"%","name":"keyword.control.flow"}]}]},"nodepath_function":{"name":"meta.literal.nodepath.gdscript","begin":"(get_node_or_null|has_node|has_node_and_resource|find_node|get_node)\\s*(?:\\()","beginCaptures":{"1":{"name":"entity.name.function.gdscript"}},"end":"(?:\\))","patterns":[{"begin":"[\\\"\\']","end":"[\\\"\\']","name":"constant.character.escape","patterns":[{"match":"%","name":"keyword.control.flow"}]}]},"self":{"match":"\\bself\\b","name":"variable.language.gdscript"},"base_expression":{"patterns":[{"include":"#builtin_get_node_shorthand"},{"include":"#nodepath_object"},{"include":"#nodepath_function"},{"include":"#strings"},{"include":"#keywords"},{"include":"#logic_op"},{"include":"#lambda_declaration"},{"include":"#in_keyword"},{"include":"#control_flow"},{"include":"#function-call"},{"include":"#comment"},{"include":"#self"},{"include":"#letter"},{"include":"#numbers"},{"include":"#builtin_func"},{"include":"#builtin_classes"},{"include":"#const_vars"},{"include":"#pascal_case_class"},{"include":"#line-continuation"}]},"logic_op":{"match":"\\b(and|or|not)\\b","name":"keyword.operator.wordlike.gdscript"},"in_keyword":{"patterns":[{"match":"\\b(?<=for\\s[\\w]*\\s)(in)\\b","name":"keyword.control.gdscript"},{"match":"\\bin\\b","name":"keyword.operator.wordlike.gdscript"}]},"compare_op":{"match":"<=|>=|==|<|>|!=","name":"keyword.operator.comparison.gdscript"},"arithmetic_op":{"match":"\\+=|-=|\\*=|/=|%=|&=|\\|=|\\*|/|%|\\+|-|<<|>>|&|\\||\\^|~","name":"keyword.operator.arithmetic.gdscript"},"assignment_op":{"match":"=","name":"keyword.operator.assignment.gdscript"},"control_flow":{"match":"\\b(?i:if|elif|else|for|while|break|continue|pass|return|match|yield|await)\\b","name":"keyword.control.gdscript"},"keywords":{"match":"\\b(?i:class|class_name|extends|is|onready|tool|static|export|setget|const|as|void|enum|preload|assert|breakpoint|rpc|sync|remote|master|puppet|slave|remotesync|mastersync|puppetsync|trait|namespace)\\b","name":"keyword.language.gdscript"},"letter":{"match":"\\b(?i:true|false|null)\\b","name":"constant.language.gdscript"},"numbers":{"patterns":[{"match":"\\b(?i:0x\\h*)\\b","name":"constant.numeric.integer.hexadecimal.gdscript"},{"match":"\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))\\b","name":"constant.numeric.float.gdscript"},{"match":"\\b(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))\\b","name":"constant.numeric.float.gdscript"},{"match":"\\b(?i:(\\d+e[\\-\\+]?\\d+))\\b","name":"constant.numeric.float.gdscript"},{"match":"\\b\\d+\\b","name":"constant.numeric.integer.gdscript"}]},"const_def":{"match":"\\b(?i:(const))\\s+([a-zA-Z_][a-zA-Z_0-9]*)","captures":{"1":{"name":"storage.type.const.gdscript"},"2":{"name":"constant.language.gdscript"}}},"var_def":{"match":"\\b(?i:(var))\\s+(?=[a-zA-Z_][a-zA-Z_0-9]*)","captures":{"1":{"name":"storage.type.var.gdscript"}}},"getter_setter_godot4":{"patterns":[{"match":"\\b(get):","captures":{"1":{"name":"entity.name.function.gdscript"}}},{"name":"meta.function.gdscript","begin":"(?x) \\s+\n (set) \\s*\n (?=\\()","end":"(:|(?=[#'\"\\n]))","beginCaptures":{"1":{"name":"entity.name.function.gdscript"}},"patterns":[{"include":"#parameters"},{"include":"#line-continuation"},{"match":"\\s*(\\-\\>)\\s*([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\:","captures":{"1":{},"2":{"name":"entity.name.type.class.gdscript"}}}]}]},"type_hint":{"match":"\\:\\s*([a-zA-Z_][a-zA-Z_0-9]*)\\s*(?=[=\\n]|setget)","captures":{"1":{"name":"entity.name.type.class.gdscript"}}},"class_def":{"captures":{"1":{"name":"entity.name.type.class.gdscript"},"2":{"name":"class.other.gdscript"}},"match":"(?<=^class)\\s+([a-zA-Z_]\\w*)\\s*(?=:)"},"class_new":{"captures":{"1":{"name":"entity.name.type.class.gdscript"},"2":{"name":"storage.type.new.gdscript"}},"match":"\\b([a-zA-Z_][a-zA-Z_0-9]*).(new)\\("},"class_is":{"captures":{"1":{"name":"storage.type.is.gdscript"},"2":{"name":"entity.name.type.class.gdscript"}},"match":"\\s+(is)\\s+([a-zA-Z_][a-zA-Z_0-9]*)"},"class_enum":{"captures":{"1":{"name":"entity.name.type.class.gdscript"},"2":{"name":"constant.language.gdscript"}},"match":"\\b([A-Z][a-zA-Z_0-9]*)\\.([A-Z_0-9]+)"},"class_name":{"captures":{"1":{"name":"entity.name.type.class.gdscript"},"2":{"name":"class.other.gdscript"}},"match":"(?<=class_name)\\s+([a-zA-Z_][a-zA-Z_0-9]*(\\.([a-zA-Z_][a-zA-Z_0-9]*))?)"},"extends":{"match":"(?<=extends)\\s+[a-zA-Z_][a-zA-Z_0-9]*(\\.([a-zA-Z_][a-zA-Z_0-9]*))?","name":"entity.other.inherited-class.gdscript"},"builtin_func":{"match":"(?<![^.]\\.|:)\\b(abs|absf|absi|acos|asin|assert|atan|atan2|bytes2var|bytes2var_with_objects|ceil|char|clamp|clampf|clampi|Color8|convert|cos|cosh|cubic_interpolate|db2linear|decimals|dectime|deg2rad|dict2inst|ease|error_string|exp|floor|fmod|fposmod|funcref|get_stack|hash|inst2dict|instance_from_id|inverse_lerp|is_equal_approx|is_inf|is_instance_id_valid|is_instance_valid|is_nan|is_zero_approx|len|lerp|lerp_angle|linear2db|load|log|max|maxf|maxi|min|minf|mini|move_toward|nearest_po2|pingpong|posmod|pow|preload|print|printerr|printraw|prints|printt|print_debug|print_stack|print_verbose|push_error|push_warning|rad2deg|randf|randfn|randf_range|randi|randi_range|randomize|rand_from_seed|rand_range|rand_seed|range|range_lerp|range_step_decimals|rid_allocate_id|rid_from_int64|round|seed|sign|signf|signi|sin|sinh|smoothstep|snapped|sqrt|stepify|step_decimals|str|str2var|tan|tanh|typeof|type_exists|var2bytes|var2bytes_with_objects|var2str|weakref|wrapf|wrapi|yield)\\b(?=(\\()([^)]*)(\\)))","name":"support.function.builtin.gdscript"},"builtin_get_node_shorthand":{"patterns":[{"include":"#builtin_get_node_shorthand_quoted"},{"include":"#builtin_get_node_shorthand_bare"}]},"builtin_get_node_shorthand_quoted":{"begin":"(\\$)([\\\"\\'])","end":"([\\\"\\'])","name":"support.function.builtin.shorthand.gdscript","beginCaptures":{"1":{"name":"keyword.control.flow"},"2":{"name":"constant.character.escape"}},"endCaptures":{"1":{"name":"constant.character.escape"}},"patterns":[{"match":"%","name":"keyword.control.flow"},{"match":"[^%]*","name":"constant.character.escape"}]},"builtin_get_node_shorthand_bare":{"begin":"(\\$)","end":"[^\\w%]","name":"support.function.builtin.shorthand.gdscript","beginCaptures":{"1":{"name":"keyword.control.flow"}},"patterns":[{"match":"[a-zA-Z_][a-zA-Z_0-9]*/?","name":"constant.character.escape"},{"match":"%[a-zA-Z_][a-zA-Z_0-9]*/?","name":"invalid.illegal.escape.gdscript"}]},"annotations":{"match":"(@)(export|export_color_no_alpha|export_dir|export_enum|export_exp_easing|export_file|export_flags|export_flags_2d_navigation|export_flags_2d_physics|export_flags_2d_render|export_flags_3d_navigation|export_flags_3d_physics|export_flags_3d_render|export_global_dir|export_global_file|export_multiline|export_node_path|export_placeholder|export_range|icon|onready|rpc|tool|warning_ignore)\\b","captures":{"1":{"name":"entity.name.function.decorator.gdscript"},"2":{"name":"entity.name.function.decorator.gdscript"}}},"builtin_classes":{"match":"(?<![^.]\\.|:)\\b(OS|Vector2|Vector2i|Vector3|Vector3i|Color|Rect2|Rect2i|Array|Basis|Dictionary|Plane|Quat|RID|Rect3|Transform|Transform2D|Transform3D|AABB|String|Color|NodePath|Object|PoolByteArray|PoolIntArray|PoolRealArray|PoolStringArray|PoolVector2Array|PoolVector3Array|PoolColorArray|bool|int|float|StringName|Quaternion|PackedByteArray|PackedInt32Array|PackedInt64Array|PackedFloat32Array|PackedFloat64Array|PackedStringArray|PackedVector2Array|PackedVector2iArray|PackedVector3Array|PackedVector3iArray|PackedColorArray|super)\\b","name":"support.class.library.gdscript"},"const_vars":{"match":"\\b([A-Z_][A-Z_0-9]*)\\b","name":"constant.language.gdscript"},"pascal_case_class":{"match":"\\b([A-Z][a-z_0-9]*([A-Z]?[a-z_0-9]+)*[A-Z]?)\\b","name":"support.class.library.gdscript"},"signal-declaration-bare":{"match":"(?x) \\s*\n (signal) \\s+\n ([a-zA-Z_][a-zA-Z_0-9]*)(?=[\\n\\s])","captures":{"1":{"name":"storage.type.function.gdscript"},"2":{"name":"entity.name.function.gdscript"}}},"signal-declaration":{"name":"meta.signal.gdscript","begin":"(?x) \\s*\n (signal) \\s+\n ([a-zA-Z_][a-zA-Z_0-9]*) \\s*\n (?=\\()","end":"((?=[#'\"\\n]))","beginCaptures":{"1":{"name":"storage.type.function.gdscript"},"2":{"name":"entity.name.function.gdscript"}},"patterns":[{"include":"#parameters"},{"include":"#line-continuation"},{"match":"\\s*(\\-\\>)\\s*([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\:","captures":{"1":{},"2":{"name":"entity.name.type.class.gdscript"}}}]},"lambda_declaration":{"name":"meta.function.gdscript","begin":"(func)(?=\\()","end":"(:|(?=[#'\"\\n]))","beginCaptures":{"1":{"name":"storage.type.function.gdscript"},"2":{"name":"entity.name.function.gdscript"}},"patterns":[{"include":"#parameters"},{"include":"#line-continuation"}]},"function-declaration":{"name":"meta.function.gdscript","begin":"(?x) \\s*\n (func) \\s+\n ([a-zA-Z_][a-zA-Z_0-9]*) \\s*\n (?=\\()","end":"(:|(?=[#'\"\\n]))","beginCaptures":{"1":{"name":"storage.type.function.gdscript"},"2":{"name":"entity.name.function.gdscript"}},"patterns":[{"include":"#parameters"},{"include":"#line-continuation"},{"match":"\\s*(\\-\\>)\\s*([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\:","captures":{"1":{},"2":{"name":"entity.name.type.class.gdscript"}}}]},"function_keyword":{"match":"func","name":"keyword.language.gdscript"},"parameters":{"name":"meta.function.parameters.gdscript","begin":"(\\()","end":"(\\))","beginCaptures":{"1":{"name":"punctuation.definition.parameters.begin.gdscript"}},"endCaptures":{"1":{"name":"punctuation.definition.parameters.end.gdscript"}},"patterns":[{"include":"#annotated-parameter"},{"match":"(?x)\n  ([[:alpha:]_]\\w*)\n    \\s* (?: (,) | (?=[)#\\n=]))\n","captures":{"1":{"name":"variable.parameter.function.language.gdscript"},"2":{"name":"punctuation.separator.parameters.gdscript"}}},{"include":"#comment"},{"include":"#loose-default"}]},"loose-default":{"begin":"(=)","end":"(,)|(?=\\))","beginCaptures":{"1":{"name":"keyword.operator.gdscript"}},"endCaptures":{"1":{"name":"punctuation.separator.parameters.gdscript"}},"patterns":[{"include":"#base_expression"}]},"annotated-parameter":{"begin":"(?x)\n  \\b\n  ([[:alpha:]_]\\w*) \\s* (:)\n","end":"(,)|(?=\\))","beginCaptures":{"1":{"name":"variable.parameter.function.language.gdscript"},"2":{"name":"punctuation.separator.annotation.gdscript"}},"endCaptures":{"1":{"name":"punctuation.separator.parameters.gdscript"}},"patterns":[{"include":"#base_expression"},{"name":"keyword.operator.assignment.gdscript","match":"=(?!=)"}]},"annotated-parameter2":{"begin":"(?x)\n  \\b\n  ([[:alpha:]_]\\w*) \\s* (:) \\s* ([[:alpha:]_]\\w*)? \\s* (=)? \\s* ([[:alpha:].0-9\\'\\\"_]*)?\n","end":"(,)|(?=\\))","beginCaptures":{"1":{"name":"variable.parameter.function.language.gdscript"},"2":{"name":"punctuation.separator.annotation.gdscript"},"3":{"patterns":[{"include":"#builtin_classes"},{"include":"#pascal_case_class"}]},"4":{"name":"keyword.operator.assignment.gdscript"},"5":{"patterns":[{"include":"#base_expression"}]}},"endCaptures":{"1":{"name":"punctuation.separator.parameters.gdscript"}}},"line-continuation":{"patterns":[{"match":"(\\\\)\\s*(\\S.*$\\n?)","captures":{"1":{"name":"punctuation.separator.continuation.line.gdscript"},"2":{"name":"invalid.illegal.line.continuation.gdscript"}}},{"begin":"(\\\\)\\s*$\\n?","end":"(?x)\n  (?=^\\s*$)\n  |\n  (?! (\\s* [rR]? (\\'\\'\\'|\\\"\\\"\\\"|\\'|\\\"))\n      |\n      (\\G $)  (?# '\\G' is necessary for ST)\n  )\n","beginCaptures":{"1":{"name":"punctuation.separator.continuation.line.gdscript"}},"patterns":[{"include":"#base_expression"}]}]},"any-method":{"match":"\\b([A-Za-z_]\\w*)\\b(?=\\s*(?:[(]))","name":"support.function.any-method.gdscript"},"any-property":{"match":"(?<=[^.]\\.)\\b([A-Za-z_]\\w*)\\b(?![(])","name":"variable.other.property.gdscript"},"function-call":{"name":"meta.function-call.gdscript","comment":"Regular function call of the type \"name(args)\"","begin":"(?x)\n  \\b(?=\n    ([[:alpha:]_]\\w*) \\s* (\\()\n  )\n","end":"(\\))","endCaptures":{"1":{"name":"punctuation.definition.arguments.end.gdscript"}},"patterns":[{"include":"#function-name"},{"include":"#function-arguments"}]},"function-name":{"patterns":[{"include":"#builtin_func"},{"include":"#builtin_classes"},{"comment":"Some color schemas support meta.function-call.generic scope","name":"support.function.any-method.gdscript","match":"(?x)\n  \\b ([[:alpha:]_]\\w*) \\b\n"}]},"function-arguments":{"begin":"(\\()","end":"(?=\\))(?!\\)\\s*\\()","beginCaptures":{"1":{"name":"punctuation.definition.arguments.begin.gdscript"}},"contentName":"meta.function-call.arguments.gdscript","patterns":[{"name":"punctuation.separator.arguments.gdscript","match":"(,)"},{"match":"\\b([[:alpha:]_]\\w*)\\s*(=)(?!=)","captures":{"1":{"name":"variable.parameter.function-call.gdscript"},"2":{"name":"keyword.operator.assignment.gdscript"}}},{"name":"keyword.operator.assignment.gdscript","match":"=(?!=)"},{"include":"#base_expression"},{"match":"\\s*(\\))\\s*(\\()","captures":{"1":{"name":"punctuation.definition.arguments.end.gdscript"},"2":{"name":"punctuation.definition.arguments.begin.gdscript"}}}]}}}}],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/Users/marcoseizayaga/repos/PersonalWebsite/src/content/about.md":"chunks/about.8c1d8ee9.mjs","/Users/marcoseizayaga/repos/PersonalWebsite/src/posts/making-the-website.md":"chunks/making-the-website.124f2eac.js","/Users/marcoseizayaga/repos/PersonalWebsite/src/posts/test.md":"chunks/test.da6be81e.js","/Users/marcoseizayaga/repos/PersonalWebsite/src/posts/testing-out-godot.md":"chunks/testing-out-godot.5c07a344.js","/Users/marcoseizayaga/repos/PersonalWebsite/src/posts/using-rust-with-tauri.md":"chunks/using-rust-with-tauri.476fa02a.js","/@fs/Users/marcoseizayaga/repos/PersonalWebsite/src/components/react-components/load-posts":"load-posts.bfd726a7.js","@astrojs/react/client.js":"client.e285458e.js","/astro/hoisted.js?q=0":"hoisted.dcdac62b.js","astro:scripts/before-hydration.js":""},"assets":["/assets/blog.52d9727b.css","/assets/blog-front-load-blog-index-posts-_slug_.a3d5f468.css","/assets/blog-index-posts-_slug_.a9b367f1.css","/assets/front-load-blog.51778792.css","/assets/index.8fad3f8e.css","/assets/index-posts-_slug_.b560420c.css","/assets/posts-_slug_.3b2bdfdc.css","/client.e285458e.js","/favicon.png","/favicon.svg","/load-posts.bfd726a7.js","/chunks/index.0d08751b.js","/chunks/index.da708d16.js","/chunks/making-the-website.124f2eac.js","/chunks/test.da6be81e.js","/chunks/testing-out-godot.5c07a344.js","/chunks/using-rust-with-tauri.476fa02a.js","/seo-assets/preview.png","/img/ArrowUDownLeft.svg","/img/TodoList_Editing.gif","/img/TodoList_MovingTasks.gif","/img/TodoList_Preview.png","/img/big-checker.png","/img/checker.png","/img/cornell.svg","/img/draw-ordering-top-down.png","/img/goose.gif","/img/microsoft.svg","/img/noise.png","/img/phyisics-hitboxes-top-down.png","/img/profile.jpeg","/img/site-preview.png","/img/stair-gate.png"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
